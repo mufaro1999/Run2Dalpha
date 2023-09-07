@@ -1,0 +1,16 @@
+,process,region,process_type,title
+0,data_obs,Fail,DATA,Data
+1,MX3000_MY300,Fail,SIGNAL,XtoHY
+2,TTToHadronic,Fail,BKG,t#bar{t}
+3,Background,Fail,BKG,Background
+4,TotalBkg,Fail,TOTAL,TotalBkg
+5,data_obs,Loose,DATA,Data
+6,MX3000_MY300,Loose,SIGNAL,XtoHY
+7,TTToHadronic,Loose,BKG,t#bar{t}
+8,Background,Loose,BKG,Background
+9,TotalBkg,Loose,TOTAL,TotalBkg
+10,data_obs,Pass,DATA,Data
+11,MX3000_MY300,Pass,SIGNAL,XtoHY
+12,TTToHadronic,Pass,BKG,t#bar{t}
+13,Background,Pass,BKG,Background
+14,TotalBkg,Pass,TOTAL,TotalBkg

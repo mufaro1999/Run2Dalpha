@@ -1,0 +1,194 @@
+{
+    "NAME": "XtoHY",
+    "GLOBAL": {
+        "FILE": "$process_CR.root",
+        "FILE_UP": "$process_CR.root",
+        "FILE_DOWN": "$process_CR.root",
+        "DATAHIST": "$region",
+        "HIST": "mjjvsmY_CR_$region_nom_weight",
+        "HIST_UP": "mjjvsmY_CR_$region_$syst_up",
+        "HIST_DOWN": "mjjvsmY_CR_$region_$syst_down",
+        "path": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed",
+	"SIGNAME": ["MX2400_MY100","MX2400_MY250","MX2400_MY350","MX1600_MY150","MX2000_MY250","MX3000_MY190","MX3000_MY300","MX3000_MY400","MX2800_MY100","MX2800_MY190","MX2600_MY300"]	
+    },
+    "REGIONS": {
+        "Pass": {
+            "PROCESSES": ["SIGNAME","TTToHadronic"],
+            "BINNING": "default"
+        },
+        "Loose": {
+            "PROCESSES": ["SIGNAME","TTToHadronic"],
+            "BINNING": "default"
+        },
+        "Fail": {
+            "PROCESSES": ["SIGNAME","TTToHadronic"],
+            "BINNING": "default"
+        }
+
+    },
+    "PROCESSES": {
+	"data_obs": {
+            "SYSTEMATICS":[],
+            "SCALE": 1.0,
+            "COLOR": 1,
+            "TYPE": "DATA",
+            "ALIAS": "JetHT_merged",
+            "TITLE": "Data",
+            "LOC": "path/FILE:DATAHIST"
+	},
+	"SIGNAME": {
+	    "SYSTEMATICS":["lumi","RF","R","btag","pdf","pileup","prefire","F","PS_FSR","PS_ISR", "JES","JER","JMS","JMR"],
+            "SCALE": 1.0,
+            "COLOR": 1,
+            "TYPE": "SIGNAL",
+            "TITLE": "XtoHY",
+            "LOC": "path/FILE:HIST"
+	},
+    "TTToHadronic": {        
+        "SYSTEMATICS":["lumi","ttbar_xsec","RF","R","btag","pdf","pileup","prefire","F","PS_FSR","PS_ISR","top_ptrw", "JES","JER","JMS","JMR"],
+        "SCALE": 1.0,
+        "COLOR": 2,
+        "TYPE": "BKG",
+        "TITLE": "t#bar{t}",
+        "LOC":"path/FILE:HIST"
+      }
+
+    },
+    "SYSTEMATICS": {
+        "lumi": {
+            "CODE": 0,
+            "VAL": 1.019
+        },
+        "ttbar_xsec": {
+            "VAL": 1.2
+        },
+	    "w_xsec": {
+	        "VAL": 1.2
+	    },
+	    "z_xsec": {
+	         "VAL": 1.2
+	    },
+        "top_ptrw": {
+            "ALIAS":"top_ptrw",
+            "UP": "path/FILE:HIST_UP",
+            "DOWN": "path/FILE:HIST_DOWN",
+            "SIGMA": 1.0
+        },
+
+        "prefire": {
+            "ALIAS": "prefire",
+            "UP": "path/FILE:HIST_UP",
+            "DOWN": "path/FILE:HIST_DOWN",
+            "SIGMA": 1.0
+        },
+
+        "pileup": {
+            "ALIAS": "pileup",
+            "UP": "path/FILE:HIST_UP",
+            "DOWN": "path/FILE:HIST_DOWN",
+            "SIGMA": 1.0
+        },
+
+        "pdf": {
+            "ALIAS": "pdf",
+            "UP": "path/FILE:HIST_UP",
+            "DOWN": "path/FILE:HIST_DOWN",
+            "SIGMA": 1.0
+        },
+        "btag": {
+            "ALIAS": "btag",
+            "UP": "path/FILE:HIST_UP",
+            "DOWN": "path/FILE:HIST_DOWN",
+            "SIGMA": 1.0
+        },
+        "F": {
+            "ALIAS": "F",
+            "UP": "path/FILE:HIST_UP",
+            "DOWN": "path/FILE:HIST_DOWN",
+            "SIGMA": 1.0
+        },
+        "R": {
+            "ALIAS": "R",
+            "UP": "path/FILE:HIST_UP",
+            "DOWN": "path/FILE:HIST_DOWN",
+            "SIGMA": 1.0
+        },
+        "RF": {
+            "ALIAS": "RF",
+            "UP": "path/FILE:HIST_UP",
+            "DOWN": "path/FILE:HIST_DOWN",
+            "SIGMA": 1.0
+        },
+        "PS_FSR": {
+            "ALIAS": "PS_FSR",
+            "UP": "path/FILE:HIST_UP",
+            "DOWN": "path/FILE:HIST_DOWN",
+            "SIGMA": 1.0
+        },
+        "PS_ISR": {
+            "ALIAS": "PS_ISR",
+            "UP": "path/FILE:HIST_UP",
+            "DOWN": "path/FILE:HIST_DOWN",
+            "SIGMA": 1.0
+        },
+        "JMS": {
+            "ALIAS": "JMS",
+            "UP": "path/FILE:HIST_UP",
+            "DOWN": "path/FILE:HIST_DOWN",
+            "SIGMA": 1.0
+        },
+        "JES": {
+            "ALIAS": "JES",
+            "UP": "path/FILE:HIST_UP",
+            "DOWN": "path/FILE:HIST_DOWN",
+            "SIGMA": 1.0
+        },
+        "JER": {
+            "ALIAS": "JER",
+            "UP": "path/FILE:HIST_UP",
+            "DOWN": "path/FILE:HIST_DOWN",
+            "SIGMA": 1.0
+        },
+        "JMR": {
+            "ALIAS": "JMR",
+            "UP": "path/FILE:HIST_UP",
+            "DOWN": "path/FILE:HIST_DOWN",
+            "SIGMA": 1.0
+        }
+
+    },
+    "BINNING": {
+        "default": {
+          "X": {
+            "NAME": "hww",
+            "TITLE": "m_{X} (GeV)",
+            "BINS": [1000,1300,1600, 1900,2200,2500,2800,3100,3400,4000],
+            "BINSNEW":[1300, 1360, 1420, 1480, 1540, 1600, 1660],
+            "BINSNU":[1000,1600, 2200, 2800,3100,4000],
+            "SIGSTARTOLD": 1420,
+            "SIGENDOLD":1540, 
+            "SIGSTART": 1300,
+            "SIGEND": 1600,
+            "SLICES":[1000, 1600,2500,4000]
+          },
+          "Y": {
+            "NAME": "ww",
+            "TITLE": "m_{Y} (GeV)",
+            "BINS": [0, 40,100, 150,200, 250,300,350,500],
+            "SLICES":[0,40,100,500]
+          }
+        }
+      },
+    "OPTIONS": {
+	"comment": "removed 'SR_pass' and 'SR_loose' from the blindedPlots and blindedFit options. Especially with the move to T'->tphi, we are just looking at the CR at first, so unblinding there might slightly aid the fit. ALSO: TURN OFF plotTemplateComparisons",
+        "blindedPlots": [],
+        "blindedFit": [],
+        "haddSignals": true,
+        "plotPrefitSigInFitB": true,
+        "plotUncerts": false,
+        "plotTitles":false,
+	"plotTemplateComparisons": false,
+        "year": 2
+    }
+
+}

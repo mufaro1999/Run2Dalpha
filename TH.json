@@ -1,0 +1,354 @@
+{
+    "NAME": "TPrimeToTH_TPhi",
+    "GLOBAL": {
+        "FILE": "THselection_HT750_$process.root",
+        "FILE_UP": "THselection_HT750_$process_$syst_up.root",
+        "FILE_DOWN": "THselection_HT750_$process_$syst_down.root",
+        "HIST": "MthvMh_particleNet_$region__nominal",
+        "HIST_UP": "MthvMh_particleNet_$region__$syst_up",
+        "HIST_DOWN": "MthvMh_particleNet_$region__$syst_down",
+        "path": "/uscms/home/ammitra/nobackup/TopPhi_analysis/CMSSW_11_1_4/src/TopHBoostedAllHad/rootfiles",
+	"SIGNAME": ["TprimeB-1800-125"]	
+    },
+    "REGIONS": {
+        "CR_fail": {
+            "PROCESSES": ["ttbar_16","ttbar_16APV","ttbar_17","ttbar_18","ZJets_16","ZJets_16APV","ZJets_17","ZJets_18","WJets_16","WJets_16APV","WJets_17","WJets_18","SIGNAME_16APV","SIGNAME_16","SIGNAME_17","SIGNAME_18"],
+            "BINNING": "default"
+        },
+	"CR_loose": {
+            "PROCESSES": ["ttbar_16","ttbar_16APV","ttbar_17","ttbar_18","ZJets_16","ZJets_16APV","ZJets_17","ZJets_18","WJets_16","WJets_16APV","WJets_17","WJets_18","SIGNAME_16APV","SIGNAME_16","SIGNAME_17","SIGNAME_18"],
+            "BINNING": "default"
+	}
+    },
+    "PROCESSES": {
+	"data_obs": {
+            "SYSTEMATICS":[],
+            "SCALE": 1.0,
+            "COLOR": 1,
+            "TYPE": "DATA",
+            "ALIAS": "Data_Run2",
+            "TITLE": "Data",
+            "LOC": "path/FILE:HIST"
+	},
+	"SIGNAME_16APV": {
+	    "SYSTEMATICS":["lumi16","TriggerEff16","Pileup16","pdf","jer16","jes","jmr16","jms16","PNetTop","PNetXbb"],
+            "SCALE": 1.0,
+            "COLOR": 1,
+            "TYPE": "SIGNAL",
+            "TITLE": "b+T 1800 GeV",
+            "LOC": "path/FILE:HIST"
+	},
+        "SIGNAME_16": {
+            "SYSTEMATICS":["lumi16","TriggerEff16","Pileup16","pdf","jer16","jes","jmr16","jms16","PNetTop","PNetXbb"],
+            "SCALE": 1.0,
+            "COLOR": 1,
+            "TYPE": "SIGNAL",
+            "TITLE": "b+T 1800 GeV",
+            "LOC": "path/FILE:HIST"
+        },
+        "SIGNAME_17": {
+            "SYSTEMATICS":["lumi17","TriggerEff17","Pileup17","pdf","jer17","jes","jmr17","jms17","PNetTop","PNetXbb"],
+            "SCALE": 1.0,
+            "COLOR": 1,
+            "TYPE": "SIGNAL",
+            "TITLE": "b+T 1800 GeV",
+            "LOC": "path/FILE:HIST"
+        },
+        "SIGNAME_18": {
+            "SYSTEMATICS":["lumi18","TriggerEff18","Pileup18","pdf","jer18","jes","jmr18","jms18","PNetTop","PNetXbb"],
+            "SCALE": 1.0,
+            "COLOR": 1,
+            "TYPE": "SIGNAL",
+            "TITLE": "b+T 1800 GeV",
+            "LOC": "path/FILE:HIST"
+        },
+        "ttbar_16APV": {
+            "SYSTEMATICS":["lumi16","ttbar_xsec","TptReweight","TriggerEff16","Pileup16","pdf","Prefire16","jer16","jes","jmr16","jms16"],
+            "SCALE": 1.0,
+            "COLOR": 2,
+            "TYPE": "BKG",
+            "TITLE": "t#bar{t}",
+            "LOC": "path/FILE:HIST"
+        },
+        "ttbar_16": {
+            "SYSTEMATICS":["lumi16","ttbar_xsec","TptReweight","TriggerEff16","Pileup16","pdf","Prefire16","jer16","jes","jmr16","jms16"],
+            "SCALE": 1.0,
+            "COLOR": 2,
+            "TYPE": "BKG",
+            "TITLE": "t#bar{t}",
+            "LOC": "path/FILE:HIST"
+        },
+        "ttbar_17": {
+            "SYSTEMATICS":["lumi17","ttbar_xsec","TptReweight","TriggerEff17","Pileup17","pdf","Prefire17","jer17","jes","jmr17","jms17"],
+            "SCALE": 1.0,
+            "COLOR": 2,
+            "TYPE": "BKG",
+            "TITLE": "t#bar{t}",
+            "LOC": "path/FILE:HIST"
+        },
+        "ttbar_18": {
+            "SYSTEMATICS":["lumi18","ttbar_xsec","TptReweight","TriggerEff18","Pileup18","pdf","jer18","jes","jmr18","jms18"],
+            "SCALE": 1.0,
+            "COLOR": 2,
+            "TYPE": "BKG",
+            "TITLE": "t#bar{t}",
+            "LOC": "path/FILE:HIST"
+        },
+        "ZJets_16APV": {
+            "SYSTEMATICS":["lumi16","z_xsec","TriggerEff16","Pileup16","pdf","jer16","jes","jmr16","jms16"],
+            "SCALE": 1.0,
+            "COLOR": 3,
+            "TYPE": "BKG",
+            "TITLE": "Z+ Jets",
+            "LOC": "path/FILE:HIST"
+        },
+	"ZJets_16": {
+	    "SYSTEMATICS":["lumi16","z_xsec","TriggerEff16","Pileup16","pdf","jer16","jes","jmr16","jms16"],
+	    "SCALE": 1.0,
+	    "COLOR": 3,
+	    "TYPE": "BKG",
+	    "TITLE": "Z+ Jets",
+	    "LOC": "path/FILE:HIST"
+	},
+        "ZJets_17": {
+            "SYSTEMATICS":["lumi17","z_xsec","TriggerEff17","Pileup17","pdf","jer17","jes","jmr17","jms17"],
+            "SCALE": 1.0,
+            "COLOR": 3,
+            "TYPE": "BKG",
+            "TITLE": "Z+ Jets",
+            "LOC": "path/FILE:HIST"
+        },
+        "ZJets_18": {
+            "SYSTEMATICS":["lumi18","z_xsec","TriggerEff18","Pileup18","pdf","jer18","jes","jmr18","jms18"],
+            "SCALE": 1.0,
+            "COLOR": 3,
+            "TYPE": "BKG",
+            "TITLE": "Z+ Jets",
+            "LOC": "path/FILE:HIST"
+        },
+        "WJets_16APV": {
+            "SYSTEMATICS":["lumi16","w_xsec","TriggerEff16","Pileup16","pdf","jer16","jes","jmr16","jms16"],
+            "SCALE": 1.0,
+            "COLOR": 4,
+            "TYPE": "BKG",
+            "TITLE": "W+ Jets",
+            "LOC": "path/FILE:HIST"
+        },
+        "WJets_16": {
+            "SYSTEMATICS":["lumi16","w_xsec","TriggerEff16","Pileup16","pdf","jer16","jes","jmr16","jms16"],
+            "SCALE": 1.0,
+            "COLOR": 4,
+            "TYPE": "BKG",
+            "TITLE": "W+ Jets",
+            "LOC": "path/FILE:HIST"
+        },
+        "WJets_17": {
+            "SYSTEMATICS":["lumi17","w_xsec","TriggerEff17","Pileup17","pdf","jer17","jes","jmr17","jms17"],
+            "SCALE": 1.0,
+            "COLOR": 4,
+            "TYPE": "BKG",
+            "TITLE": "W+ Jets",
+            "LOC": "path/FILE:HIST"
+        },
+        "WJets_18": {
+            "SYSTEMATICS":["lumi18","w_xsec","TriggerEff18","Pileup18","pdf","jer18","jes","jmr18","jms18"],
+            "SCALE": 1.0,
+            "COLOR": 4,
+            "TYPE": "BKG",
+            "TITLE": "W+ Jets",
+            "LOC": "path/FILE:HIST"
+        }
+    },
+    "SYSTEMATICS": {
+        "lumi16": {
+            "CODE": 0,
+            "VAL": 1.01
+        },
+        "lumi17": {
+            "CODE": 0,
+            "VAL": 1.02
+        },
+        "lumi18": {
+            "CODE": 0,
+            "VAL": 1.025
+        },
+        "ttbar_xsec": {
+            "VAL": 1.2
+        },
+	"w_xsec": {
+	    "VAL": 1.2
+	},
+	"z_xsec": {
+	    "VAL": 1.2
+	},
+	"PNetTop": {
+	    "UP": "path/FILE_UP:HIST",
+	    "DOWN": "path/FILE_DOWN:HIST",
+	    "SIGMA": 1.0
+	},
+        "PNetXbb": {
+            "UP": "path/FILE_UP:HIST",
+            "DOWN": "path/FILE_DOWN:HIST",
+            "SIGMA": 1.0
+        },
+        "TptReweight": {
+            "UP": "path/FILE:HIST_UP",
+            "DOWN": "path/FILE:HIST_DOWN",
+            "SIGMA": 1.0
+        },
+        "Prefire16": {
+	    "ALIAS1": "Prefire",
+            "ALIAS": "L1PreFiringWeight",
+            "UP": "path/FILE:HIST_UP",
+            "DOWN": "path/FILE:HIST_DOWN",
+            "SIGMA": 1.0
+        },
+        "Prefire17": {
+	    "ALIAS1": "Prefire",
+            "ALIAS": "L1PreFiringWeight",
+            "UP": "path/FILE:HIST_UP",
+            "DOWN": "path/FILE:HIST_DOWN",
+            "SIGMA": 1.0
+        },
+        "Pileup": {
+            "ALIAS": "Pileup",
+            "UP": "path/FILE:HIST_UP",
+            "DOWN": "path/FILE:HIST_DOWN",
+            "SIGMA": 1.0
+        },
+        "Pileup16": {
+            "ALIAS": "Pileup",
+            "UP": "path/FILE:HIST_UP",
+            "DOWN": "path/FILE:HIST_DOWN",
+            "SIGMA": 1.0
+        },
+        "Pileup17": {
+            "ALIAS": "Pileup",
+            "UP": "path/FILE:HIST_UP",
+            "DOWN": "path/FILE:HIST_DOWN",
+            "SIGMA": 1.0
+        },
+        "Pileup18": {
+            "ALIAS": "Pileup",
+            "UP": "path/FILE:HIST_UP",
+            "DOWN": "path/FILE:HIST_DOWN",
+            "SIGMA": 1.0
+        },
+        "TriggerEff16": {
+	    "CODE": 0,
+	    "VAL": 1.1,
+            "COMMENT_UP": "path/FILE:HIST_UP",
+            "COMMENT_DOWN": "path/FILE:HIST_DOWN",
+            "COMMENT_SIGMA": 1.0
+        },
+        "TriggerEff17": {
+            "UP": "path/FILE:HIST_UP",
+            "DOWN": "path/FILE:HIST_DOWN",
+            "SIGMA": 1.0
+        },
+        "TriggerEff18": {
+            "UP": "path/FILE:HIST_UP",
+            "DOWN": "path/FILE:HIST_DOWN",
+            "SIGMA": 1.0
+        },
+        "pdf": {
+            "ALIAS": "Pdfweight",
+            "UP": "path/FILE:HIST_UP",
+            "DOWN": "path/FILE:HIST_DOWN",
+            "SIGMA": 1.0
+        },
+        "jmr16": {
+            "ALIAS": "JMR",
+            "UP": "path/FILE_UP:HIST",
+            "DOWN": "path/FILE_DOWN:HIST",
+            "SIGMA": 1.0
+        },
+        "jmr17": {
+            "ALIAS": "JMR",
+            "UP": "path/FILE_UP:HIST",
+            "DOWN": "path/FILE_DOWN:HIST",
+            "SIGMA": 1.0
+        },
+        "jmr18": {
+            "ALIAS": "JMR",
+            "UP": "path/FILE_UP:HIST",
+            "DOWN": "path/FILE_DOWN:HIST",
+            "SIGMA": 1.0
+        },
+        "jms16": {
+            "ALIAS": "JMS",
+            "UP": "path/FILE_UP:HIST",
+            "DOWN": "path/FILE_DOWN:HIST",
+            "SIGMA": 1.0
+        },
+        "jms17": {
+            "ALIAS": "JMS",
+            "UP": "path/FILE_UP:HIST",
+            "DOWN": "path/FILE_DOWN:HIST",
+            "SIGMA": 1.0
+        },
+        "jms18": {
+            "ALIAS": "JMS",
+            "UP": "path/FILE_UP:HIST",
+            "DOWN": "path/FILE_DOWN:HIST",
+            "SIGMA": 1.0
+        },
+        "jes": {
+            "ALIAS": "JES",
+            "UP": "path/FILE_UP:HIST",
+            "DOWN": "path/FILE_DOWN:HIST",
+            "SIGMA": 1.0
+        },
+        "jer16": {
+            "ALIAS": "JER",
+            "UP": "path/FILE_UP:HIST",
+            "DOWN": "path/FILE_DOWN:HIST",
+            "SIGMA": 1.0
+        },
+        "jer17": {
+            "ALIAS": "JER",
+            "UP": "path/FILE_UP:HIST",
+            "DOWN": "path/FILE_DOWN:HIST",
+            "SIGMA": 1.0
+        },
+        "jer18": {
+            "ALIAS": "JER",
+            "UP": "path/FILE_UP:HIST",
+            "DOWN": "path/FILE_DOWN:HIST",
+            "SIGMA": 1.0
+        }
+    },
+    "BINNING": {
+        "default": {
+            "X": {
+                "NAME": "jetmass",
+                "TITLE": "m_{#phi} (GeV)",
+                "MIN": 60,
+                "MAX": 240,
+                "NBINS": 12,
+                "SIGSTART": 105,
+                "SIGEND": 150
+            },
+            "Y": {
+                "NAME": "resmass",
+                "TITLE": "m_{t#phi} (GeV)",
+                "MIN": 900,
+                "MAX": 2200,
+                "NBINS": 13
+            }
+        }
+    },
+    "OPTIONS": {
+	"comment": "removed 'SR_pass' and 'SR_loose' from the blindedPlots and blindedFit options. Especially with the move to T'->tphi, we are just looking at the CR at first, so unblinding there might slightly aid the fit. ALSO: TURN OFF plotTemplateComparisons",
+        "blindedPlots": [],
+        "blindedFit": [],
+        "plotPrefitSigInFitB": true,
+        "plotUncerts": false,
+        "plotTitles":false,
+	"plotTemplateComparisons": true,
+        "year": 2
+    }
+
+}
+
+

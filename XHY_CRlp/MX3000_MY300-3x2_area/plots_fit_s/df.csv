@@ -1,0 +1,11 @@
+,process,region,process_type,title
+0,data_obs,Loose,DATA,Data
+1,MX3000_MY300,Loose,SIGNAL,XtoHY
+2,TTToHadronic,Loose,BKG,t#bar{t}
+3,Background,Loose,BKG,Multijet
+4,TotalBkg,Loose,TOTAL,TotalBkg
+5,data_obs,Pass,DATA,Data
+6,MX3000_MY300,Pass,SIGNAL,XtoHY
+7,TTToHadronic,Pass,BKG,t#bar{t}
+8,Background_3x2,Pass,BKG,Multijet
+9,TotalBkg,Pass,TOTAL,TotalBkg

@@ -1,0 +1,935 @@
+
+>>> random number generator seed is 123456
+   Options for Robust Minimizer :: 
+        Tolerance  0.1
+        Strategy   0
+        Type,Algo  Minuit2,Migrad
+>>> method used is FitDiagnostics
+Set Default Value of Parameter r To : 1
+>>> 0 out of 6 channels masked
+
+>>> Channel masks:
+  1) 0x5f505c0 RooRealVar::  mask_Loose_LOW = 0 C  L(-INF - +INF)  "mask_Loose_LOW"
+  2) 0x5f51010 RooRealVar::  mask_Loose_SIG = 0 C  L(-INF - +INF)  "mask_Loose_SIG"
+  3) 0x5f51b60 RooRealVar:: mask_Loose_HIGH = 0 C  L(-INF - +INF)  "mask_Loose_HIGH"
+  4) 0x5f52730 RooRealVar::   mask_Pass_LOW = 0 C  L(-INF - +INF)  "mask_Pass_LOW"
+  5) 0x5f53260 RooRealVar::   mask_Pass_SIG = 0 C  L(-INF - +INF)  "mask_Pass_SIG"
+  6) 0x5f53de0 RooRealVar::  mask_Pass_HIGH = 0 C  L(-INF - +INF)  "mask_Pass_HIGH"
+SimNLL created with 0 channels, 0 generic constraints, 16 fast gaussian constraints, 0 fast poisson constraints, 0 fast group constraints, 
+Minuit2Minimizer: Minimize with max-calls 8000 convergence for edm < 0.1 strategy 0
+Minuit2Minimizer::Minuit  - Changing default options
+             StorageLevel :               0
+MnSeedGenerator: for initial parameters FCN = 0
+MnSeedGenerator: Initial state:   - FCN =                0 Edm =            0 NCalls =     65
+VariableMetric: start iterating until Edm is < 0.0001
+VariableMetric: Initial state   - FCN =                0 Edm =            0 NCalls =     65
+VariableMetric: Iteration #   0 - FCN =                0 Edm =            0 NCalls =     65
+Minuit2Minimizer : Valid minimum - status = 0
+FVAL  = 0
+Edm   = 0
+Nfcn  = 65
+F	  = 0	 +/-  1
+JER	  = 0	 +/-  1
+JES	  = 0	 +/-  1
+JMR	  = 0	 +/-  1
+JMS	  = 0	 +/-  1
+PS_FSR	  = 0	 +/-  1
+PS_ISR	  = 0	 +/-  1
+R	  = 0	 +/-  1
+RF	  = 0	 +/-  1
+btag	  = 0	 +/-  1
+lumi	  = 0	 +/-  1
+pdf	  = 0	 +/-  1
+pileup	  = 0	 +/-  1
+prefire	  = 0	 +/-  1
+top_ptrw	  = 0	 +/-  1
+ttbar_xsec	  = 0	 +/-  1
+SimNLL created with 6 channels, 0 generic constraints, 16 fast gaussian constraints, 0 fast poisson constraints, 0 fast group constraints, 
+
+  RooFitResult: minimized FCN value: -0.00716024, estimated distance to minimum: 0.00145458
+                covariance matrix quality: Full matrix, but forced positive-definite
+                Status : MINIMIZE=0 HESSE=0 
+
+    Constant Parameter    Value     
+  --------------------  ------------
+                  F_In    0.0000e+00
+                JER_In    0.0000e+00
+                JES_In    0.0000e+00
+                JMR_In    0.0000e+00
+                JMS_In    0.0000e+00
+             PS_FSR_In    0.0000e+00
+             PS_ISR_In    0.0000e+00
+                 RF_In    0.0000e+00
+                  R_In    0.0000e+00
+               btag_In    0.0000e+00
+               lumi_In    0.0000e+00
+  n_exp_binLoose_HIGH_proc_Background    1.0000e+00
+  n_exp_binLoose_LOW_proc_Background    1.0000e+00
+  n_exp_binLoose_SIG_proc_Background    1.0000e+00
+  n_exp_binPass_HIGH_proc_Background_1x1    1.0000e+00
+  n_exp_binPass_LOW_proc_Background_1x1    1.0000e+00
+  n_exp_binPass_SIG_proc_Background_1x1    1.0000e+00
+                pdf_In    0.0000e+00
+             pileup_In    0.0000e+00
+            prefire_In    0.0000e+00
+                     r    0.0000e+00
+           top_ptrw_In    0.0000e+00
+         ttbar_xsec_In    0.0000e+00
+
+    Floating Parameter  InitialValue    FinalValue +/-  Error     GblCorr.
+  --------------------  ------------  --------------------------  --------
+  Background_Loose_HIGH_bin_1-1    4.4140e+03    4.4142e+03 +/-  4.73e+00  <none>
+  Background_Loose_HIGH_bin_1-2    3.7045e+03    3.7044e+03 +/-  4.38e+00  <none>
+  Background_Loose_HIGH_bin_1-3    2.3720e+03    2.3720e+03 +/-  3.51e+00  <none>
+  Background_Loose_HIGH_bin_1-4    1.5653e+03    1.5652e+03 +/-  2.87e+00  <none>
+  Background_Loose_HIGH_bin_1-5    5.7528e+02    5.7540e+02 +/-  1.76e+00  <none>
+  Background_Loose_HIGH_bin_1-6    1.7715e+02    1.7724e+02 +/-  9.44e-01  <none>
+  Background_Loose_HIGH_bin_1-7    6.3879e+01    6.3884e+01 +/-  5.71e-01  <none>
+  Background_Loose_HIGH_bin_2-1    2.0004e+03    2.0004e+03 +/-  3.18e+00  <none>
+  Background_Loose_HIGH_bin_2-2    1.6206e+03    1.6208e+03 +/-  2.91e+00  <none>
+  Background_Loose_HIGH_bin_2-3    1.0263e+03    1.0262e+03 +/-  2.30e+00  <none>
+  Background_Loose_HIGH_bin_2-4    6.3337e+02    6.3362e+02 +/-  1.89e+00  <none>
+  Background_Loose_HIGH_bin_2-5    2.2962e+02    2.2972e+02 +/-  1.10e+00  <none>
+  Background_Loose_HIGH_bin_2-6    8.6441e+01    8.6440e+01 +/-  6.59e-01  <none>
+  Background_Loose_HIGH_bin_2-7    3.0171e+01    3.0170e+01 +/-  3.89e-01  <none>
+  Background_Loose_HIGH_bin_3-1    8.7362e+02    8.7362e+02 +/-  2.10e+00  <none>
+  Background_Loose_HIGH_bin_3-2    7.5644e+02    7.5643e+02 +/-  1.96e+00  <none>
+  Background_Loose_HIGH_bin_3-3    5.1103e+02    5.1122e+02 +/-  1.64e+00  <none>
+  Background_Loose_HIGH_bin_3-4    3.2845e+02    3.2851e+02 +/-  1.30e+00  <none>
+  Background_Loose_HIGH_bin_3-5    1.1902e+02    1.1902e+02 +/-  7.75e-01  <none>
+  Background_Loose_HIGH_bin_3-6    3.9064e+01    3.9063e+01 +/-  4.44e-01  <none>
+  Background_Loose_HIGH_bin_3-7    1.0551e+01    1.0558e+01 +/-  2.53e-01  <none>
+  Background_Loose_HIGH_bin_4-1    4.4862e+02    4.4865e+02 +/-  1.52e+00  <none>
+  Background_Loose_HIGH_bin_4-2    3.5319e+02    3.5319e+02 +/-  1.34e+00  <none>
+  Background_Loose_HIGH_bin_4-3    2.4147e+02    2.4155e+02 +/-  1.11e+00  <none>
+  Background_Loose_HIGH_bin_4-4    1.4704e+02    1.4695e+02 +/-  8.83e-01  <none>
+  Background_Loose_HIGH_bin_4-5    7.2422e+01    7.2420e+01 +/-  6.06e-01  <none>
+  Background_Loose_HIGH_bin_4-6    1.8306e+01    1.8305e+01 +/-  3.05e-01  <none>
+  Background_Loose_HIGH_bin_4-7    1.0408e+01    1.0407e+01 +/-  2.30e-01  <none>
+  Background_Loose_HIGH_bin_5-1    2.0119e+02    2.0119e+02 +/-  1.01e+00  <none>
+  Background_Loose_HIGH_bin_5-2    1.7034e+02    1.7033e+02 +/-  9.32e-01  <none>
+  Background_Loose_HIGH_bin_5-3    9.4763e+01    9.4762e+01 +/-  6.95e-01  <none>
+  Background_Loose_HIGH_bin_5-4    7.1030e+01    7.1028e+01 +/-  6.01e-01  <none>
+  Background_Loose_HIGH_bin_5-5    2.4533e+01    2.4532e+01 +/-  3.53e-01  <none>
+  Background_Loose_HIGH_bin_5-6    9.6262e+00    9.6256e+00 +/-  2.21e-01  <none>
+  Background_Loose_HIGH_bin_5-7    5.2067e+00    5.2060e+00 +/-  1.63e-01  <none>
+  Background_Loose_HIGH_bin_6-1    1.7635e+02    1.7634e+02 +/-  9.53e-01  <none>
+  Background_Loose_HIGH_bin_6-2    1.3992e+02    1.3992e+02 +/-  8.48e-01  <none>
+  Background_Loose_HIGH_bin_6-3    9.5582e+01    9.5580e+01 +/-  7.01e-01  <none>
+  Background_Loose_HIGH_bin_6-4    4.5096e+01    4.5095e+01 +/-  4.81e-01  <none>
+  Background_Loose_HIGH_bin_6-5    2.6503e+01    2.6502e+01 +/-  3.69e-01  <none>
+  Background_Loose_HIGH_bin_6-6    1.1456e+01    1.1456e+01 +/-  2.43e-01  <none>
+  Background_Loose_HIGH_bin_6-7    2.5176e+00    2.5169e+00 +/-  1.16e-01  <none>
+  Background_Loose_LOW_bin_1-1    6.5980e+03    6.5977e+03 +/-  5.76e+00  <none>
+  Background_Loose_LOW_bin_1-2    5.3656e+03    5.3651e+03 +/-  5.28e+00  <none>
+  Background_Loose_LOW_bin_1-3    3.4144e+03    3.4140e+03 +/-  4.27e+00  <none>
+  Background_Loose_LOW_bin_1-4    2.1003e+03    2.1003e+03 +/-  3.46e+00  <none>
+  Background_Loose_LOW_bin_1-5    8.1285e+02    8.1285e+02 +/-  2.08e+00  <none>
+  Background_Loose_LOW_bin_1-6    2.1228e+02    2.1228e+02 +/-  1.05e+00  <none>
+  Background_Loose_LOW_bin_1-7    7.6745e+01    7.6696e+01 +/-  6.36e-01  <none>
+  Background_Loose_SIG_bin_1-1    3.0893e+03    3.0894e+03 +/-  3.96e+00  <none>
+  Background_Loose_SIG_bin_1-2    2.5093e+03    2.5097e+03 +/-  3.62e+00  <none>
+  Background_Loose_SIG_bin_1-3    1.6330e+03    1.6327e+03 +/-  2.93e+00  <none>
+  Background_Loose_SIG_bin_1-4    9.9029e+02    9.9027e+02 +/-  2.37e+00  <none>
+  Background_Loose_SIG_bin_1-5    3.5145e+02    3.5163e+02 +/-  1.37e+00  <none>
+  Background_Loose_SIG_bin_1-6    1.0608e+02    1.0608e+02 +/-  7.26e-01  <none>
+  Background_Loose_SIG_bin_1-7    3.3256e+01    3.3298e+01 +/-  4.06e-01  <none>
+  Background_Loose_SIG_bin_2-1    2.5471e+03    2.5470e+03 +/-  3.59e+00  <none>
+  Background_Loose_SIG_bin_2-2    2.1450e+03    2.1451e+03 +/-  3.34e+00  <none>
+  Background_Loose_SIG_bin_2-3    1.3503e+03    1.3502e+03 +/-  2.68e+00  <none>
+  Background_Loose_SIG_bin_2-4    8.5829e+02    8.5827e+02 +/-  2.18e+00  <none>
+  Background_Loose_SIG_bin_2-5    3.1586e+02    3.1577e+02 +/-  1.29e+00  <none>
+  Background_Loose_SIG_bin_2-6    8.9905e+01    8.9903e+01 +/-  6.69e-01  <none>
+  Background_Loose_SIG_bin_2-7    2.2212e+01    2.2211e+01 +/-  3.32e-01  <none>
+  Background_Loose_SIG_bin_3-1    2.1122e+03    2.1123e+03 +/-  3.27e+00  <none>
+  Background_Loose_SIG_bin_3-2    1.7111e+03    1.7111e+03 +/-  2.96e+00  <none>
+  Background_Loose_SIG_bin_3-3    1.0936e+03    1.0939e+03 +/-  2.41e+00  <none>
+  Background_Loose_SIG_bin_3-4    7.4382e+02    7.4398e+02 +/-  2.00e+00  <none>
+  Background_Loose_SIG_bin_3-5    2.4752e+02    2.4754e+02 +/-  1.15e+00  <none>
+  Background_Loose_SIG_bin_3-6    6.0770e+01    6.0850e+01 +/-  5.50e-01  <none>
+  Background_Loose_SIG_bin_3-7    2.8220e+01    2.8219e+01 +/-  3.74e-01  <none>
+  Background_Loose_SIG_bin_4-1    1.7832e+03    1.7832e+03 +/-  3.01e+00  <none>
+  Background_Loose_SIG_bin_4-2    1.3824e+03    1.3824e+03 +/-  2.69e+00  <none>
+  Background_Loose_SIG_bin_4-3    8.8013e+02    8.8027e+02 +/-  2.13e+00  <none>
+  Background_Loose_SIG_bin_4-4    6.2917e+02    6.2877e+02 +/-  1.84e+00  <none>
+  Background_Loose_SIG_bin_4-5    2.3261e+02    2.3260e+02 +/-  1.08e+00  <none>
+  Background_Loose_SIG_bin_4-6    7.2048e+01    7.2047e+01 +/-  5.99e-01  <none>
+  Background_Loose_SIG_bin_4-7    1.7968e+01    1.7968e+01 +/-  2.99e-01  <none>
+  Background_Loose_SIG_bin_5-1    1.4037e+03    1.4038e+03 +/-  2.66e+00  <none>
+  Background_Loose_SIG_bin_5-2    1.2048e+03    1.2052e+03 +/-  2.50e+00  <none>
+  Background_Loose_SIG_bin_5-3    7.7969e+02    7.7977e+02 +/-  2.01e+00  <none>
+  Background_Loose_SIG_bin_5-4    4.8848e+02    4.8861e+02 +/-  1.63e+00  <none>
+  Background_Loose_SIG_bin_5-5    1.9404e+02    1.9407e+02 +/-  1.01e+00  <none>
+  Background_Loose_SIG_bin_5-6    5.6658e+01    5.6656e+01 +/-  5.31e-01  <none>
+  Background_Loose_SIG_bin_5-7    2.1772e+01    2.1767e+01 +/-  3.43e-01  <none>
+  Background_rpf_1x1_par0    4.2283e-01    4.2283e-01 +/-  2.86e-04  <none>
+  Background_rpf_1x1_par1   -1.2269e-01   -1.2265e-01 +/-  1.21e-03  <none>
+  Background_rpf_1x1_par2    4.0206e-01    4.0206e-01 +/-  2.89e-04  <none>
+  Background_rpf_1x1_par3    1.9085e-02    1.9149e-02 +/-  1.34e-03  <none>
+                     F   -2.6613e-03    2.0318e-02 +/-  3.12e-02  <none>
+                   JER    3.8786e-02    2.3532e-02 +/-  2.72e-02  <none>
+                   JES    8.9617e-02    7.6047e-02 +/-  4.50e-01  <none>
+                   JMR    1.1327e+00    1.1375e+00 +/-  1.80e-02  <none>
+                   JMS   -9.9690e-02   -1.0136e-01 +/-  4.73e-01  <none>
+                PS_FSR   -2.1968e-01   -2.1536e-01 +/-  1.11e-02  <none>
+                PS_ISR    5.7860e-02    7.2553e-02 +/-  2.89e-02  <none>
+                     R    1.9247e-01    1.9328e-01 +/-  1.77e-02  <none>
+                    RF    2.5040e-01    2.4773e-01 +/-  1.44e-02  <none>
+                  btag    2.7694e-02    2.3671e-02 +/-  3.57e-02  <none>
+                  lumi   -1.3884e-01   -1.3812e-01 +/-  7.34e-02  <none>
+                   pdf   -1.0431e-01   -1.1387e-01 +/-  2.32e-02  <none>
+                pileup   -3.5745e-01   -3.5955e-01 +/-  1.45e-02  <none>
+               prefire   -2.0857e-02   -2.2381e-02 +/-  3.78e-02  <none>
+              top_ptrw    0.0000e+00    0.0000e+00 +/-  3.90e-02  <none>
+            ttbar_xsec   -1.3461e+00   -1.3388e+00 +/-  2.66e-02  <none>
+
+
+  RooFitResult: minimized FCN value: -0.00716024, estimated distance to minimum: 0.00145458
+                covariance matrix quality: Full matrix, but forced positive-definite
+                Status : MINIMIZE=0 HESSE=0 
+
+    Constant Parameter    Value     
+  --------------------  ------------
+                  F_In    0.0000e+00
+                JER_In    0.0000e+00
+                JES_In    0.0000e+00
+                JMR_In    0.0000e+00
+                JMS_In    0.0000e+00
+             PS_FSR_In    0.0000e+00
+             PS_ISR_In    0.0000e+00
+                 RF_In    0.0000e+00
+                  R_In    0.0000e+00
+               btag_In    0.0000e+00
+               lumi_In    0.0000e+00
+  n_exp_binLoose_HIGH_proc_Background    1.0000e+00
+  n_exp_binLoose_LOW_proc_Background    1.0000e+00
+  n_exp_binLoose_SIG_proc_Background    1.0000e+00
+  n_exp_binPass_HIGH_proc_Background_1x1    1.0000e+00
+  n_exp_binPass_LOW_proc_Background_1x1    1.0000e+00
+  n_exp_binPass_SIG_proc_Background_1x1    1.0000e+00
+                pdf_In    0.0000e+00
+             pileup_In    0.0000e+00
+            prefire_In    0.0000e+00
+                     r    0.0000e+00
+           top_ptrw_In    0.0000e+00
+         ttbar_xsec_In    0.0000e+00
+
+    Floating Parameter  InitialValue    FinalValue +/-  Error     GblCorr.
+  --------------------  ------------  --------------------------  --------
+  Background_Loose_HIGH_bin_1-1    4.4140e+03    4.4142e+03 +/-  4.73e+00  <none>
+  Background_Loose_HIGH_bin_1-2    3.7045e+03    3.7044e+03 +/-  4.38e+00  <none>
+  Background_Loose_HIGH_bin_1-3    2.3720e+03    2.3720e+03 +/-  3.51e+00  <none>
+  Background_Loose_HIGH_bin_1-4    1.5653e+03    1.5652e+03 +/-  2.87e+00  <none>
+  Background_Loose_HIGH_bin_1-5    5.7528e+02    5.7540e+02 +/-  1.76e+00  <none>
+  Background_Loose_HIGH_bin_1-6    1.7715e+02    1.7724e+02 +/-  9.44e-01  <none>
+  Background_Loose_HIGH_bin_1-7    6.3879e+01    6.3884e+01 +/-  5.71e-01  <none>
+  Background_Loose_HIGH_bin_2-1    2.0004e+03    2.0004e+03 +/-  3.18e+00  <none>
+  Background_Loose_HIGH_bin_2-2    1.6206e+03    1.6208e+03 +/-  2.91e+00  <none>
+  Background_Loose_HIGH_bin_2-3    1.0263e+03    1.0262e+03 +/-  2.30e+00  <none>
+  Background_Loose_HIGH_bin_2-4    6.3337e+02    6.3362e+02 +/-  1.89e+00  <none>
+  Background_Loose_HIGH_bin_2-5    2.2962e+02    2.2972e+02 +/-  1.10e+00  <none>
+  Background_Loose_HIGH_bin_2-6    8.6441e+01    8.6440e+01 +/-  6.59e-01  <none>
+  Background_Loose_HIGH_bin_2-7    3.0171e+01    3.0170e+01 +/-  3.89e-01  <none>
+  Background_Loose_HIGH_bin_3-1    8.7362e+02    8.7362e+02 +/-  2.10e+00  <none>
+  Background_Loose_HIGH_bin_3-2    7.5644e+02    7.5643e+02 +/-  1.96e+00  <none>
+  Background_Loose_HIGH_bin_3-3    5.1103e+02    5.1122e+02 +/-  1.64e+00  <none>
+  Background_Loose_HIGH_bin_3-4    3.2845e+02    3.2851e+02 +/-  1.30e+00  <none>
+  Background_Loose_HIGH_bin_3-5    1.1902e+02    1.1902e+02 +/-  7.75e-01  <none>
+  Background_Loose_HIGH_bin_3-6    3.9064e+01    3.9063e+01 +/-  4.44e-01  <none>
+  Background_Loose_HIGH_bin_3-7    1.0551e+01    1.0558e+01 +/-  2.53e-01  <none>
+  Background_Loose_HIGH_bin_4-1    4.4862e+02    4.4865e+02 +/-  1.52e+00  <none>
+  Background_Loose_HIGH_bin_4-2    3.5319e+02    3.5319e+02 +/-  1.34e+00  <none>
+  Background_Loose_HIGH_bin_4-3    2.4147e+02    2.4155e+02 +/-  1.11e+00  <none>
+  Background_Loose_HIGH_bin_4-4    1.4704e+02    1.4695e+02 +/-  8.83e-01  <none>
+  Background_Loose_HIGH_bin_4-5    7.2422e+01    7.2420e+01 +/-  6.06e-01  <none>
+  Background_Loose_HIGH_bin_4-6    1.8306e+01    1.8305e+01 +/-  3.05e-01  <none>
+  Background_Loose_HIGH_bin_4-7    1.0408e+01    1.0407e+01 +/-  2.30e-01  <none>
+  Background_Loose_HIGH_bin_5-1    2.0119e+02    2.0119e+02 +/-  1.01e+00  <none>
+  Background_Loose_HIGH_bin_5-2    1.7034e+02    1.7033e+02 +/-  9.32e-01  <none>
+  Background_Loose_HIGH_bin_5-3    9.4763e+01    9.4762e+01 +/-  6.95e-01  <none>
+  Background_Loose_HIGH_bin_5-4    7.1030e+01    7.1028e+01 +/-  6.01e-01  <none>
+  Background_Loose_HIGH_bin_5-5    2.4533e+01    2.4532e+01 +/-  3.53e-01  <none>
+  Background_Loose_HIGH_bin_5-6    9.6262e+00    9.6256e+00 +/-  2.21e-01  <none>
+  Background_Loose_HIGH_bin_5-7    5.2067e+00    5.2060e+00 +/-  1.63e-01  <none>
+  Background_Loose_HIGH_bin_6-1    1.7635e+02    1.7634e+02 +/-  9.53e-01  <none>
+  Background_Loose_HIGH_bin_6-2    1.3992e+02    1.3992e+02 +/-  8.48e-01  <none>
+  Background_Loose_HIGH_bin_6-3    9.5582e+01    9.5580e+01 +/-  7.01e-01  <none>
+  Background_Loose_HIGH_bin_6-4    4.5096e+01    4.5095e+01 +/-  4.81e-01  <none>
+  Background_Loose_HIGH_bin_6-5    2.6503e+01    2.6502e+01 +/-  3.69e-01  <none>
+  Background_Loose_HIGH_bin_6-6    1.1456e+01    1.1456e+01 +/-  2.43e-01  <none>
+  Background_Loose_HIGH_bin_6-7    2.5176e+00    2.5169e+00 +/-  1.16e-01  <none>
+  Background_Loose_LOW_bin_1-1    6.5980e+03    6.5977e+03 +/-  5.76e+00  <none>
+  Background_Loose_LOW_bin_1-2    5.3656e+03    5.3651e+03 +/-  5.28e+00  <none>
+  Background_Loose_LOW_bin_1-3    3.4144e+03    3.4140e+03 +/-  4.27e+00  <none>
+  Background_Loose_LOW_bin_1-4    2.1003e+03    2.1003e+03 +/-  3.46e+00  <none>
+  Background_Loose_LOW_bin_1-5    8.1285e+02    8.1285e+02 +/-  2.08e+00  <none>
+  Background_Loose_LOW_bin_1-6    2.1228e+02    2.1228e+02 +/-  1.05e+00  <none>
+  Background_Loose_LOW_bin_1-7    7.6745e+01    7.6696e+01 +/-  6.36e-01  <none>
+  Background_Loose_SIG_bin_1-1    3.0893e+03    3.0894e+03 +/-  3.96e+00  <none>
+  Background_Loose_SIG_bin_1-2    2.5093e+03    2.5097e+03 +/-  3.62e+00  <none>
+  Background_Loose_SIG_bin_1-3    1.6330e+03    1.6327e+03 +/-  2.93e+00  <none>
+  Background_Loose_SIG_bin_1-4    9.9029e+02    9.9027e+02 +/-  2.37e+00  <none>
+  Background_Loose_SIG_bin_1-5    3.5145e+02    3.5163e+02 +/-  1.37e+00  <none>
+  Background_Loose_SIG_bin_1-6    1.0608e+02    1.0608e+02 +/-  7.26e-01  <none>
+  Background_Loose_SIG_bin_1-7    3.3256e+01    3.3298e+01 +/-  4.06e-01  <none>
+  Background_Loose_SIG_bin_2-1    2.5471e+03    2.5470e+03 +/-  3.59e+00  <none>
+  Background_Loose_SIG_bin_2-2    2.1450e+03    2.1451e+03 +/-  3.34e+00  <none>
+  Background_Loose_SIG_bin_2-3    1.3503e+03    1.3502e+03 +/-  2.68e+00  <none>
+  Background_Loose_SIG_bin_2-4    8.5829e+02    8.5827e+02 +/-  2.18e+00  <none>
+  Background_Loose_SIG_bin_2-5    3.1586e+02    3.1577e+02 +/-  1.29e+00  <none>
+  Background_Loose_SIG_bin_2-6    8.9905e+01    8.9903e+01 +/-  6.69e-01  <none>
+  Background_Loose_SIG_bin_2-7    2.2212e+01    2.2211e+01 +/-  3.32e-01  <none>
+  Background_Loose_SIG_bin_3-1    2.1122e+03    2.1123e+03 +/-  3.27e+00  <none>
+  Background_Loose_SIG_bin_3-2    1.7111e+03    1.7111e+03 +/-  2.96e+00  <none>
+  Background_Loose_SIG_bin_3-3    1.0936e+03    1.0939e+03 +/-  2.41e+00  <none>
+  Background_Loose_SIG_bin_3-4    7.4382e+02    7.4398e+02 +/-  2.00e+00  <none>
+  Background_Loose_SIG_bin_3-5    2.4752e+02    2.4754e+02 +/-  1.15e+00  <none>
+  Background_Loose_SIG_bin_3-6    6.0770e+01    6.0850e+01 +/-  5.50e-01  <none>
+  Background_Loose_SIG_bin_3-7    2.8220e+01    2.8219e+01 +/-  3.74e-01  <none>
+  Background_Loose_SIG_bin_4-1    1.7832e+03    1.7832e+03 +/-  3.01e+00  <none>
+  Background_Loose_SIG_bin_4-2    1.3824e+03    1.3824e+03 +/-  2.69e+00  <none>
+  Background_Loose_SIG_bin_4-3    8.8013e+02    8.8027e+02 +/-  2.13e+00  <none>
+  Background_Loose_SIG_bin_4-4    6.2917e+02    6.2877e+02 +/-  1.84e+00  <none>
+  Background_Loose_SIG_bin_4-5    2.3261e+02    2.3260e+02 +/-  1.08e+00  <none>
+  Background_Loose_SIG_bin_4-6    7.2048e+01    7.2047e+01 +/-  5.99e-01  <none>
+  Background_Loose_SIG_bin_4-7    1.7968e+01    1.7968e+01 +/-  2.99e-01  <none>
+  Background_Loose_SIG_bin_5-1    1.4037e+03    1.4038e+03 +/-  2.66e+00  <none>
+  Background_Loose_SIG_bin_5-2    1.2048e+03    1.2052e+03 +/-  2.50e+00  <none>
+  Background_Loose_SIG_bin_5-3    7.7969e+02    7.7977e+02 +/-  2.01e+00  <none>
+  Background_Loose_SIG_bin_5-4    4.8848e+02    4.8861e+02 +/-  1.63e+00  <none>
+  Background_Loose_SIG_bin_5-5    1.9404e+02    1.9407e+02 +/-  1.01e+00  <none>
+  Background_Loose_SIG_bin_5-6    5.6658e+01    5.6656e+01 +/-  5.31e-01  <none>
+  Background_Loose_SIG_bin_5-7    2.1772e+01    2.1767e+01 +/-  3.43e-01  <none>
+  Background_rpf_1x1_par0    4.2283e-01    4.2283e-01 +/-  2.86e-04  <none>
+  Background_rpf_1x1_par1   -1.2269e-01   -1.2265e-01 +/-  1.21e-03  <none>
+  Background_rpf_1x1_par2    4.0206e-01    4.0206e-01 +/-  2.89e-04  <none>
+  Background_rpf_1x1_par3    1.9085e-02    1.9149e-02 +/-  1.34e-03  <none>
+                     F   -2.6613e-03    2.0318e-02 +/-  3.12e-02  <none>
+                   JER    3.8786e-02    2.3532e-02 +/-  2.72e-02  <none>
+                   JES    8.9617e-02    7.6047e-02 +/-  4.50e-01  <none>
+                   JMR    1.1327e+00    1.1375e+00 +/-  1.80e-02  <none>
+                   JMS   -9.9690e-02   -1.0136e-01 +/-  4.73e-01  <none>
+                PS_FSR   -2.1968e-01   -2.1536e-01 +/-  1.11e-02  <none>
+                PS_ISR    5.7860e-02    7.2553e-02 +/-  2.89e-02  <none>
+                     R    1.9247e-01    1.9328e-01 +/-  1.77e-02  <none>
+                    RF    2.5040e-01    2.4773e-01 +/-  1.44e-02  <none>
+                  btag    2.7694e-02    2.3671e-02 +/-  3.57e-02  <none>
+                  lumi   -1.3884e-01   -1.3812e-01 +/-  7.34e-02  <none>
+                   pdf   -1.0431e-01   -1.1387e-01 +/-  2.32e-02  <none>
+                pileup   -3.5745e-01   -3.5955e-01 +/-  1.45e-02  <none>
+               prefire   -2.0857e-02   -2.2381e-02 +/-  3.78e-02  <none>
+              top_ptrw    0.0000e+00    0.0000e+00 +/-  3.90e-02  <none>
+            ttbar_xsec   -1.3461e+00   -1.3388e+00 +/-  2.66e-02  <none>
+
+
+  RooFitResult: minimized FCN value: -0.00339766, estimated distance to minimum: 0.000123927
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 HESSE=0 
+
+    Constant Parameter    Value     
+  --------------------  ------------
+                  F_In    0.0000e+00
+                JER_In    0.0000e+00
+                JES_In    0.0000e+00
+                JMR_In    0.0000e+00
+                JMS_In    0.0000e+00
+             PS_FSR_In    0.0000e+00
+             PS_ISR_In    0.0000e+00
+                 RF_In    0.0000e+00
+                  R_In    0.0000e+00
+               btag_In    0.0000e+00
+               lumi_In    0.0000e+00
+  n_exp_binLoose_HIGH_proc_Background    1.0000e+00
+  n_exp_binLoose_LOW_proc_Background    1.0000e+00
+  n_exp_binLoose_SIG_proc_Background    1.0000e+00
+  n_exp_binPass_HIGH_proc_Background_1x1    1.0000e+00
+  n_exp_binPass_LOW_proc_Background_1x1    1.0000e+00
+  n_exp_binPass_SIG_proc_Background_1x1    1.0000e+00
+                pdf_In    0.0000e+00
+             pileup_In    0.0000e+00
+            prefire_In    0.0000e+00
+           top_ptrw_In    0.0000e+00
+         ttbar_xsec_In    0.0000e+00
+
+    Floating Parameter  InitialValue    FinalValue +/-  Error     GblCorr.
+  --------------------  ------------  --------------------------  --------
+  Background_Loose_HIGH_bin_1-1    4.4143e+03    4.4145e+03 +/-  6.37e+01  <none>
+  Background_Loose_HIGH_bin_1-2    3.7053e+03    3.7054e+03 +/-  6.25e+01  <none>
+  Background_Loose_HIGH_bin_1-3    2.3731e+03    2.3734e+03 +/-  5.18e+01  <none>
+  Background_Loose_HIGH_bin_1-4    1.5663e+03    1.5661e+03 +/-  4.19e+01  <none>
+  Background_Loose_HIGH_bin_1-5    5.7593e+02    5.7590e+02 +/-  2.53e+01  <none>
+  Background_Loose_HIGH_bin_1-6    1.7744e+02    1.7746e+02 +/-  1.28e+01  <none>
+  Background_Loose_HIGH_bin_1-7    6.4002e+01    6.4000e+01 +/-  7.53e+00  <none>
+  Background_Loose_HIGH_bin_2-1    2.0014e+03    2.0014e+03 +/-  4.21e+01  <none>
+  Background_Loose_HIGH_bin_2-2    1.6217e+03    1.6217e+03 +/-  4.04e+01  <none>
+  Background_Loose_HIGH_bin_2-3    1.0271e+03    1.0271e+03 +/-  3.10e+01  <none>
+  Background_Loose_HIGH_bin_2-4    6.3427e+02    6.3429e+02 +/-  2.87e+01  <none>
+  Background_Loose_HIGH_bin_2-5    2.3022e+02    2.3003e+02 +/-  1.52e+01  <none>
+  Background_Loose_HIGH_bin_2-6    8.6582e+01    8.6581e+01 +/-  8.67e+00  <none>
+  Background_Loose_HIGH_bin_2-7    3.0237e+01    3.0237e+01 +/-  5.12e+00  <none>
+  Background_Loose_HIGH_bin_3-1    8.7435e+02    8.7436e+02 +/-  2.78e+01  <none>
+  Background_Loose_HIGH_bin_3-2    7.5717e+02    7.5717e+02 +/-  2.58e+01  <none>
+  Background_Loose_HIGH_bin_3-3    5.1177e+02    5.1177e+02 +/-  2.25e+01  <none>
+  Background_Loose_HIGH_bin_3-4    3.2908e+02    3.2899e+02 +/-  1.73e+01  <none>
+  Background_Loose_HIGH_bin_3-5    1.1922e+02    1.1921e+02 +/-  1.02e+01  <none>
+  Background_Loose_HIGH_bin_3-6    3.9121e+01    3.9121e+01 +/-  5.84e+00  <none>
+  Background_Loose_HIGH_bin_3-7    1.0511e+01    1.0568e+01 +/-  3.62e+00  <none>
+  Background_Loose_HIGH_bin_4-1    4.4909e+02    4.4916e+02 +/-  2.02e+01  <none>
+  Background_Loose_HIGH_bin_4-2    3.5339e+02    3.5339e+02 +/-  1.77e+01  <none>
+  Background_Loose_HIGH_bin_4-3    2.4175e+02    2.4181e+02 +/-  1.49e+01  <none>
+  Background_Loose_HIGH_bin_4-4    1.4699e+02    1.4700e+02 +/-  1.19e+01  <none>
+  Background_Loose_HIGH_bin_4-5    7.2291e+01    7.2287e+01 +/-  7.97e+00  <none>
+  Background_Loose_HIGH_bin_4-6    1.8093e+01    1.8091e+01 +/-  4.01e+00  <none>
+  Background_Loose_HIGH_bin_4-7    1.0023e+01    1.0021e+01 +/-  3.03e+00  <none>
+  Background_Loose_HIGH_bin_5-1    2.0148e+02    2.0149e+02 +/-  1.34e+01  <none>
+  Background_Loose_HIGH_bin_5-2    1.6979e+02    1.6979e+02 +/-  1.23e+01  <none>
+  Background_Loose_HIGH_bin_5-3    9.4710e+01    9.4708e+01 +/-  9.15e+00  <none>
+  Background_Loose_HIGH_bin_5-4    7.0411e+01    7.0404e+01 +/-  7.92e+00  <none>
+  Background_Loose_HIGH_bin_5-5    2.2764e+01    2.2767e+01 +/-  4.67e+00  <none>
+  Background_Loose_HIGH_bin_5-6    7.4371e+00    7.4393e+00 +/-  2.83e+00  <none>
+  Background_Loose_HIGH_bin_5-7    3.4430e+00    3.4428e+00 +/-  2.00e+00  <none>
+  Background_Loose_HIGH_bin_6-1    1.7676e+02    1.7676e+02 +/-  1.26e+01  <none>
+  Background_Loose_HIGH_bin_6-2    1.4013e+02    1.4013e+02 +/-  1.12e+01  <none>
+  Background_Loose_HIGH_bin_6-3    9.5807e+01    9.5809e+01 +/-  9.25e+00  <none>
+  Background_Loose_HIGH_bin_6-4    4.5079e+01    4.5080e+01 +/-  6.35e+00  <none>
+  Background_Loose_HIGH_bin_6-5    2.6411e+01    2.6410e+01 +/-  4.86e+00  <none>
+  Background_Loose_HIGH_bin_6-6    1.0256e+01    1.0267e+01 +/-  3.22e+00  <none>
+  Background_Loose_HIGH_bin_6-7    1.5123e+00    1.5127e+00 +/-  1.39e+00  <none>
+  Background_Loose_LOW_bin_1-1    6.5932e+03    6.5931e+03 +/-  7.82e+01  <none>
+  Background_Loose_LOW_bin_1-2    5.3625e+03    5.3626e+03 +/-  8.42e+01  <none>
+  Background_Loose_LOW_bin_1-3    3.4137e+03    3.4133e+03 +/-  7.32e+01  <none>
+  Background_Loose_LOW_bin_1-4    2.1003e+03    2.1002e+03 +/-  7.72e+01  <none>
+  Background_Loose_LOW_bin_1-5    8.1315e+02    8.1294e+02 +/-  3.05e+01  <none>
+  Background_Loose_LOW_bin_1-6    2.1234e+02    2.1238e+02 +/-  1.40e+01  <none>
+  Background_Loose_LOW_bin_1-7    7.6767e+01    7.6779e+01 +/-  8.74e+00  <none>
+  Background_Loose_SIG_bin_1-1    3.0878e+03    3.0878e+03 +/-  5.33e+01  <none>
+  Background_Loose_SIG_bin_1-2    2.5088e+03    2.5089e+03 +/-  5.20e+01  <none>
+  Background_Loose_SIG_bin_1-3    1.6326e+03    1.6329e+03 +/-  4.15e+01  <none>
+  Background_Loose_SIG_bin_1-4    9.9037e+02    9.9036e+02 +/-  3.76e+01  <none>
+  Background_Loose_SIG_bin_1-5    3.5183e+02    3.5177e+02 +/-  1.92e+01  <none>
+  Background_Loose_SIG_bin_1-6    1.0617e+02    1.0617e+02 +/-  9.55e+00  <none>
+  Background_Loose_SIG_bin_1-7    3.3340e+01    3.3341e+01 +/-  5.35e+00  <none>
+  Background_Loose_SIG_bin_2-1    2.5458e+03    2.5459e+03 +/-  4.86e+01  <none>
+  Background_Loose_SIG_bin_2-2    2.1445e+03    2.1447e+03 +/-  4.66e+01  <none>
+  Background_Loose_SIG_bin_2-3    1.3501e+03    1.3503e+03 +/-  3.90e+01  <none>
+  Background_Loose_SIG_bin_2-4    8.5860e+02    8.5869e+02 +/-  3.72e+01  <none>
+  Background_Loose_SIG_bin_2-5    3.1588e+02    3.1594e+02 +/-  1.77e+01  <none>
+  Background_Loose_SIG_bin_2-6    8.9983e+01    8.9982e+01 +/-  8.79e+00  <none>
+  Background_Loose_SIG_bin_2-7    2.2244e+01    2.2244e+01 +/-  4.37e+00  <none>
+  Background_Loose_SIG_bin_3-1    2.1115e+03    2.1117e+03 +/-  4.39e+01  <none>
+  Background_Loose_SIG_bin_3-2    1.7109e+03    1.7110e+03 +/-  3.99e+01  <none>
+  Background_Loose_SIG_bin_3-3    1.0938e+03    1.0940e+03 +/-  3.49e+01  <none>
+  Background_Loose_SIG_bin_3-4    7.4432e+02    7.4427e+02 +/-  3.05e+01  <none>
+  Background_Loose_SIG_bin_3-5    2.4776e+02    2.4772e+02 +/-  1.56e+01  <none>
+  Background_Loose_SIG_bin_3-6    6.0887e+01    6.0898e+01 +/-  7.23e+00  <none>
+  Background_Loose_SIG_bin_3-7    2.8262e+01    2.8261e+01 +/-  4.93e+00  <none>
+  Background_Loose_SIG_bin_4-1    1.7827e+03    1.7827e+03 +/-  3.99e+01  <none>
+  Background_Loose_SIG_bin_4-2    1.3823e+03    1.3823e+03 +/-  3.71e+01  <none>
+  Background_Loose_SIG_bin_4-3    8.8061e+02    8.8043e+02 +/-  2.87e+01  <none>
+  Background_Loose_SIG_bin_4-4    6.2915e+02    6.2913e+02 +/-  2.64e+01  <none>
+  Background_Loose_SIG_bin_4-5    2.3278e+02    2.3278e+02 +/-  1.42e+01  <none>
+  Background_Loose_SIG_bin_4-6    7.2121e+01    7.2120e+01 +/-  7.88e+00  <none>
+  Background_Loose_SIG_bin_4-7    1.7998e+01    1.7997e+01 +/-  3.93e+00  <none>
+  Background_Loose_SIG_bin_5-1    1.4034e+03    1.4035e+03 +/-  3.61e+01  <none>
+  Background_Loose_SIG_bin_5-2    1.2053e+03    1.2051e+03 +/-  3.42e+01  <none>
+  Background_Loose_SIG_bin_5-3    7.7987e+02    7.8004e+02 +/-  2.79e+01  <none>
+  Background_Loose_SIG_bin_5-4    4.8877e+02    4.8887e+02 +/-  2.31e+01  <none>
+  Background_Loose_SIG_bin_5-5    1.9420e+02    1.9417e+02 +/-  1.38e+01  <none>
+  Background_Loose_SIG_bin_5-6    5.6719e+01    5.6718e+01 +/-  6.99e+00  <none>
+  Background_Loose_SIG_bin_5-7    2.1796e+01    2.1789e+01 +/-  4.54e+00  <none>
+  Background_rpf_1x1_par0    4.2626e-01    4.2626e-01 +/-  4.73e-01  <none>
+  Background_rpf_1x1_par1   -1.3393e-01   -1.3392e-01 +/-  1.51e-01  <none>
+  Background_rpf_1x1_par2    4.0151e-01    4.0150e-01 +/-  4.46e-01  <none>
+  Background_rpf_1x1_par3    1.1946e-02    1.2055e-02 +/-  3.34e-02  <none>
+                     F    1.0307e-02    1.5774e-02 +/-  4.88e-01  <none>
+                   JER    3.6535e-02    3.1705e-02 +/-  3.74e-01  <none>
+                   JES    8.5407e-02    7.7142e-02 +/-  4.49e-01  <none>
+                   JMR    1.1323e+00    1.1438e+00 +/-  5.77e-01  <none>
+                   JMS   -1.1581e-01   -1.0446e-01 +/-  3.63e-01  <none>
+                PS_FSR   -2.0423e-01   -2.1426e-01 +/-  2.27e-01  <none>
+                PS_ISR    6.4791e-02    6.5704e-02 +/-  5.02e-01  <none>
+                     R    2.0164e-01    2.0003e-01 +/-  4.80e-01  <none>
+                    RF    2.3760e-01    2.4307e-01 +/-  4.66e-01  <none>
+                  btag    3.1681e-02    2.7867e-02 +/-  5.14e-01  <none>
+                  lumi   -1.3716e-01   -1.3839e-01 +/-  9.98e-01  <none>
+                   pdf   -1.1187e-01   -1.0687e-01 +/-  5.15e-01  <none>
+                pileup   -3.6518e-01   -3.5674e-01 +/-  4.75e-01  <none>
+               prefire   -2.1183e-02   -2.1931e-02 +/-  5.17e-01  <none>
+                     r    1.5102e-01    1.5075e-01 +/-  8.05e-02  <none>
+              top_ptrw    0.0000e+00    0.0000e+00 +/-  5.16e-01  <none>
+            ttbar_xsec   -1.3419e+00   -1.3387e+00 +/-  8.05e-01  <none>
+
+Robus Fit for POI 
+Set default minimizer to Minuit2, algorithm Migrad, tolerance 0.1
+Searching for crossing at nll = -13725 in the interval 0.150754, 20
+      r      lvl-here  lvl-there   stepping
+  [WARNING] Found [Background_Loose_HIGH_bin_6-7] at boundary. 
+ [WARNING] After the fit some parameters are at their boundary.
+ [WARNING] Are you sure your model is correct?
+2.135678    -11.51604  +0.49451    1.984925
+  [WARNING] Found [Background_Loose_HIGH_bin_6-7] at boundary. 
+ [WARNING] After the fit some parameters are at their boundary.
+ [WARNING] Are you sure your model is correct?
+0.746231    -4.38131  -11.51604    0.595477
+  [WARNING] Found [Background_Loose_HIGH_bin_6-7] at boundary. 
+ [WARNING] After the fit some parameters are at their boundary.
+ [WARNING] Are you sure your model is correct?
+0.329397    -1.20413  -4.38131    0.178643
+0.204347    +0.29966  -1.20413    0.053593
+ [WARNING] After the fit some parameters are at their boundary.
+ [WARNING] Are you sure your model is correct?
+0.257940    -0.20245  +0.29966    0.053593
+ [WARNING] After the fit some parameters are at their boundary.
+ [WARNING] Are you sure your model is correct?
+0.220425    +0.17671  -0.20245    0.016078
+ [WARNING] After the fit some parameters are at their boundary.
+ [WARNING] Are you sure your model is correct?
+0.236502    +0.02903  +0.17671    0.016078
+ [WARNING] After the fit some parameters are at their boundary.
+ [WARNING] Are you sure your model is correct?
+0.252580    -0.14104  +0.02903    0.016078
+ [WARNING] After the fit some parameters are at their boundary.
+ [WARNING] Are you sure your model is correct?
+0.241326    -0.01976  -0.14104    0.004823
+ [WARNING] After the fit some parameters are at their boundary.
+ [WARNING] Are you sure your model is correct?
+0.237949    +0.01463  -0.01976    0.001447
+ [WARNING] After the fit some parameters are at their boundary.
+ [WARNING] Are you sure your model is correct?
+0.239396    +0.00004  +0.01463    0.001447
+Set default minimizer to Minuit2, algorithm Migrad, tolerance 0.1
+Searching for crossing at nll = -13725 in the interval 0.150754, -5
+      r      lvl-here  lvl-there   stepping
+WARNING: underflow to -3.99484e-05 in pdf_binPass_HIGH_obsOnly for bin 32, weight 5
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(Pass_HIGH) evaluation error, 
+ origin       : RooAbsReal::Pass_HIGH[ params=(Background_Loose_HIGH_bin_1-1,Background_Loose_HIGH_bin_1-2,Background_Loose_HIGH_bin_1-3,Background_Loose_HIGH_bin_1-4,Background_Loose_HIGH_bin_1-5,Background_Loose_HIGH_bin_1-6,Background_Loose_HIGH_bin_1-7,Background_Loose_HIGH_bin_2-1,Background_Loose_HIGH_bin_2-2,Background_Loose_HIGH_bin_2-3,Background_Loose_HIGH_bin_2-4,Background_Loose_HIGH_bin_2-5,Background_Loose_HIGH_bin_2-6,Background_Loose_HIGH_bin_2-7,Background_Loose_HIGH_bin_3-1,Background_Loose_HIGH_bin_3-2,Background_Loose_HIGH_bin_3-3,Background_Loose_HIGH_bin_3-4,Background_Loose_HIGH_bin_3-5,Background_Loose_HIGH_bin_3-6,Background_Loose_HIGH_bin_3-7,Background_Loose_HIGH_bin_4-1,Background_Loose_HIGH_bin_4-2,Background_Loose_HIGH_bin_4-3,Background_Loose_HIGH_bin_4-4,Background_Loose_HIGH_bin_4-5,Background_Loose_HIGH_bin_4-6,Background_Loose_HIGH_bin_4-7,Background_Loose_HIGH_bin_5-1,Background_Loose_HIGH_bin_5-2,Background_Loose_HIGH_bin_5-3,Background_Loose_HIGH_bin_5-4,Background_Loose_HIGH_bin_5-5,Background_Loose_HIGH_bin_5-6,Background_Loose_HIGH_bin_5-7,Background_Loose_HIGH_bin_6-1,Background_Loose_HIGH_bin_6-2,Background_Loose_HIGH_bin_6-3,Background_Loose_HIGH_bin_6-4,Background_Loose_HIGH_bin_6-5,Background_Loose_HIGH_bin_6-6,Background_Loose_HIGH_bin_6-7,Background_rpf_1x1_par0,Background_rpf_1x1_par1,Background_rpf_1x1_par2,Background_rpf_1x1_par3,F,JER,JES,JMR,JMS,PS_FSR,PS_ISR,R,RF,btag,lumi,n_exp_binPass_HIGH_proc_Background_1x1,pdf,pileup,prefire,r,top_ptrw,ttbar_xsec) catParams=() ]
+ message      : Number of events is negative or error
+ server values: params=(Background_Loose_HIGH_bin_1-1 = 4414.44 +/- 62.0132,Background_Loose_HIGH_bin_1-2 = 3705.44 +/- 57.5084,Background_Loose_HIGH_bin_1-3 = 2373.42 +/- 46.0754,Background_Loose_HIGH_bin_1-4 = 1566.15 +/- 37.6657,Background_Loose_HIGH_bin_1-5 = 575.93 +/- 23.1435,Background_Loose_HIGH_bin_1-6 = 177.464 +/- 12.398,Background_Loose_HIGH_bin_1-7 = 64.0003 +/- 7.50547,Background_Loose_HIGH_bin_2-1 = 2001.37 +/- 41.7473,Background_Loose_HIGH_bin_2-2 = 1621.71 +/- 38.1672,Background_Loose_HIGH_bin_2-3 = 1027.08 +/- 30.2296,Background_Loose_HIGH_bin_2-4 = 634.315 +/- 24.8575,Background_Loose_HIGH_bin_2-5 = 230.046 +/- 14.5185,Background_Loose_HIGH_bin_2-6 = 86.5799 +/- 8.65911,Background_Loose_HIGH_bin_2-7 = 30.2363 +/- 5.11793,Background_Loose_HIGH_bin_3-1 = 874.349 +/- 27.5983,Background_Loose_HIGH_bin_3-2 = 757.165 +/- 25.6796,Background_Loose_HIGH_bin_3-3 = 511.763 +/- 21.5623,Background_Loose_HIGH_bin_3-4 = 328.997 +/- 17.1304,Background_Loose_HIGH_bin_3-5 = 119.213 +/- 10.1872,Background_Loose_HIGH_bin_3-6 = 39.1205 +/- 5.83647,Background_Loose_HIGH_bin_3-7 = 10.5636 +/- 3.33332,Background_Loose_HIGH_bin_4-1 = 449.15 +/- 19.9897,Background_Loose_HIGH_bin_4-2 = 353.388 +/- 17.5947,Background_Loose_HIGH_bin_4-3 = 241.801 +/- 14.5668,Background_Loose_HIGH_bin_4-4 = 147.004 +/- 11.6043,Background_Loose_HIGH_bin_4-5 = 72.2852 +/- 7.96686,Background_Loose_HIGH_bin_4-6 = 18.0903 +/- 4.00453,Background_Loose_HIGH_bin_4-7 = 10.0201 +/- 3.02268,Background_Loose_HIGH_bin_5-1 = 201.483 +/- 13.3156,Background_Loose_HIGH_bin_5-2 = 169.783 +/- 12.2501,Background_Loose_HIGH_bin_5-3 = 94.7056 +/- 9.13767,Background_Loose_HIGH_bin_5-4 = 70.3991 +/- 7.90919,Background_Loose_HIGH_bin_5-5 = 22.7645 +/- 4.61225,Background_Loose_HIGH_bin_5-6 = 7.43778 +/- 2.75668,Background_Loose_HIGH_bin_5-7 = 3.44138 +/- 1.94922,Background_Loose_HIGH_bin_6-1 = 176.76 +/- 12.5312,Background_Loose_HIGH_bin_6-2 = 140.129 +/- 11.1622,Background_Loose_HIGH_bin_6-3 = 95.8071 +/- 9.22558,Background_Loose_HIGH_bin_6-4 = 45.0785 +/- 6.33762,Background_Loose_HIGH_bin_6-5 = 26.4086 +/- 4.85872,Background_Loose_HIGH_bin_6-6 = 10.2659 +/- 3.16962,Background_Loose_HIGH_bin_6-7 = 1.51155 +/- 1.36409,Background_rpf_1x1_par0 = 0.426251 +/- 0.00369502,Background_rpf_1x1_par1 = -0.133948 +/- 0.0156343,Background_rpf_1x1_par2 = 0.4015 +/- 0.00371741,Background_rpf_1x1_par3 = 0.012048 +/- 0.0173762,F = 0.0156753 +/- 0.418768,JER = 0.0307236 +/- 0.356505,JES = 0.0773449 +/- 0.0250775,JMR = 1.14456 +/- 0.241282,JMS = -0.104308 +/- 0.0371278,PS_FSR = -0.213997 +/- 0.145455,PS_ISR = 0.0660291 +/- 0.392691,R = 0.199945 +/- 0.225641,RF = 0.243221 +/- 0.188103,btag = 0.0280743 +/- 0.47545,lumi = -0.13767 +/- 0.959501,n_exp_binPass_HIGH_proc_Background_1x1 = 1,pdf = -0.106961 +/- 0.312597,pileup = -0.356429 +/- 0.189398,prefire = -0.022286 +/- 0.502867,r = -0.364322 +/- 0.0805374,top_ptrw = 0 +/- 0.516132,ttbar_xsec = -1.33791 +/- 0.345241), catParams=()
+FASTEXIT from pdf_binPass_HIGH_obsOnly
+  [WARNING] Found [Background_Loose_HIGH_bin_1-1] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_1-2] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_1-3] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_1-4] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_1-5] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_1-6] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_1-7] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_2-1] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_2-2] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_2-3] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_2-4] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_2-5] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_2-6] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_2-7] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_3-1] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_3-2] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_3-3] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_3-4] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_3-5] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_3-6] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_3-7] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_4-1] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_4-2] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_4-3] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_4-4] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_4-5] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_4-6] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_4-7] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_5-1] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_5-2] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_5-3] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_5-4] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_5-5] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_5-6] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_5-7] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_6-1] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_6-2] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_6-3] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_6-4] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_6-5] at boundary. 
+  [WARNING] Found [Background_Loose_HIGH_bin_6-6] at boundary. 
+ [WARNING] After the fit some parameters are at their boundary.
+ [WARNING] Are you sure your model is correct?
+WARNING: underflow to -3.99484e-05 in pdf_binPass_HIGH_obsOnly for bin 32, weight 5
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(Pass_HIGH) evaluation error, 
+ origin       : RooAbsReal::Pass_HIGH[ params=(Background_Loose_HIGH_bin_1-1,Background_Loose_HIGH_bin_1-2,Background_Loose_HIGH_bin_1-3,Background_Loose_HIGH_bin_1-4,Background_Loose_HIGH_bin_1-5,Background_Loose_HIGH_bin_1-6,Background_Loose_HIGH_bin_1-7,Background_Loose_HIGH_bin_2-1,Background_Loose_HIGH_bin_2-2,Background_Loose_HIGH_bin_2-3,Background_Loose_HIGH_bin_2-4,Background_Loose_HIGH_bin_2-5,Background_Loose_HIGH_bin_2-6,Background_Loose_HIGH_bin_2-7,Background_Loose_HIGH_bin_3-1,Background_Loose_HIGH_bin_3-2,Background_Loose_HIGH_bin_3-3,Background_Loose_HIGH_bin_3-4,Background_Loose_HIGH_bin_3-5,Background_Loose_HIGH_bin_3-6,Background_Loose_HIGH_bin_3-7,Background_Loose_HIGH_bin_4-1,Background_Loose_HIGH_bin_4-2,Background_Loose_HIGH_bin_4-3,Background_Loose_HIGH_bin_4-4,Background_Loose_HIGH_bin_4-5,Background_Loose_HIGH_bin_4-6,Background_Loose_HIGH_bin_4-7,Background_Loose_HIGH_bin_5-1,Background_Loose_HIGH_bin_5-2,Background_Loose_HIGH_bin_5-3,Background_Loose_HIGH_bin_5-4,Background_Loose_HIGH_bin_5-5,Background_Loose_HIGH_bin_5-6,Background_Loose_HIGH_bin_5-7,Background_Loose_HIGH_bin_6-1,Background_Loose_HIGH_bin_6-2,Background_Loose_HIGH_bin_6-3,Background_Loose_HIGH_bin_6-4,Background_Loose_HIGH_bin_6-5,Background_Loose_HIGH_bin_6-6,Background_Loose_HIGH_bin_6-7,Background_rpf_1x1_par0,Background_rpf_1x1_par1,Background_rpf_1x1_par2,Background_rpf_1x1_par3,F,JER,JES,JMR,JMS,PS_FSR,PS_ISR,R,RF,btag,lumi,n_exp_binPass_HIGH_proc_Background_1x1,pdf,pileup,prefire,r,top_ptrw,ttbar_xsec) catParams=() ]
+ message      : Number of events is negative or error
+ server values: params=(Background_Loose_HIGH_bin_1-1 = 4414.44 +/- 227820,Background_Loose_HIGH_bin_1-2 = 3705.44 +/- 228145,Background_Loose_HIGH_bin_1-3 = 2373.42 +/- 228758,Background_Loose_HIGH_bin_1-4 = 1566.15 +/- 229129,Background_Loose_HIGH_bin_1-5 = 575.93 +/- 229584,Background_Loose_HIGH_bin_1-6 = 177.464 +/- 229767,Background_Loose_HIGH_bin_1-7 = 64.0003 +/- 229819,Background_Loose_HIGH_bin_2-1 = 2001.37 +/- 228929,Background_Loose_HIGH_bin_2-2 = 1621.71 +/- 229103,Background_Loose_HIGH_bin_2-3 = 1027.08 +/- 229377,Background_Loose_HIGH_bin_2-4 = 634.315 +/- 229557,Background_Loose_HIGH_bin_2-5 = 230.046 +/- 229743,Background_Loose_HIGH_bin_2-6 = 86.5799 +/- 229809,Background_Loose_HIGH_bin_2-7 = 30.2363 +/- 229835,Background_Loose_HIGH_bin_3-1 = 874.349 +/- 229447,Background_Loose_HIGH_bin_3-2 = 757.165 +/- 229501,Background_Loose_HIGH_bin_3-3 = 511.763 +/- 229614,Background_Loose_HIGH_bin_3-4 = 328.997 +/- 229698,Background_Loose_HIGH_bin_3-5 = 119.213 +/- 229794,Background_Loose_HIGH_bin_3-6 = 39.1205 +/- 229831,Background_Loose_HIGH_bin_3-7 = 10.5636 +/- 229844,Background_Loose_HIGH_bin_4-1 = 449.15 +/- 229642,Background_Loose_HIGH_bin_4-2 = 353.388 +/- 229686,Background_Loose_HIGH_bin_4-3 = 241.801 +/- 229738,Background_Loose_HIGH_bin_4-4 = 147.004 +/- 229781,Background_Loose_HIGH_bin_4-5 = 72.2852 +/- 229816,Background_Loose_HIGH_bin_4-6 = 18.0903 +/- 229841,Background_Loose_HIGH_bin_4-7 = 10.0201 +/- 229844,Background_Loose_HIGH_bin_5-1 = 201.483 +/- 229756,Background_Loose_HIGH_bin_5-2 = 169.783 +/- 229771,Background_Loose_HIGH_bin_5-3 = 94.7056 +/- 229805,Background_Loose_HIGH_bin_5-4 = 70.3991 +/- 229816,Background_Loose_HIGH_bin_5-5 = 22.7645 +/- 229838,Background_Loose_HIGH_bin_5-6 = 7.43778 +/- 229845,Background_Loose_HIGH_bin_5-7 = 3.44138 +/- 229847,Background_Loose_HIGH_bin_6-1 = 176.76 +/- 229768,Background_Loose_HIGH_bin_6-2 = 140.129 +/- 229784,Background_Loose_HIGH_bin_6-3 = 95.8071 +/- 229805,Background_Loose_HIGH_bin_6-4 = 45.0785 +/- 229828,Background_Loose_HIGH_bin_6-5 = 26.4086 +/- 229837,Background_Loose_HIGH_bin_6-6 = 10.2659 +/- 229844,Background_Loose_HIGH_bin_6-7 = 1.51155 +/- 229848,Background_rpf_1x1_par0 = 0.426251 +/- 0,Background_rpf_1x1_par1 = -0.133948 +/- 0,Background_rpf_1x1_par2 = 0.4015 +/- 0,Background_rpf_1x1_par3 = 0.012048 +/- 0,F = 0.0156753 +/- 2.96114e-16,JER = 0.0307236 +/- 2.52087e-16,JES = 0.0773449 +/- 1.77325e-17,JMR = 1.14456 +/- 1.70612e-16,JMS = -0.104308 +/- 2.62533e-17,PS_FSR = -0.213997 +/- 1.02852e-16,PS_ISR = 0.0660291 +/- 2.77674e-16,R = 0.199945 +/- 1.59552e-16,RF = 0.243221 +/- 1.33009e-16,btag = 0.0280743 +/- 3.36194e-16,lumi = -0.13767 +/- 6.7847e-16,n_exp_binPass_HIGH_proc_Background_1x1 = 1,pdf = -0.106961 +/- 2.21039e-16,pileup = -0.356429 +/- 1.33925e-16,prefire = -0.022286 +/- 3.55581e-16,r = -0.364322 +/- 0.0805374,top_ptrw = 0 +/- 3.64961e-16,ttbar_xsec = -1.33791 +/- 2.44122e-16), catParams=()
+FASTEXIT from pdf_binPass_HIGH_obsOnly
+-0.364322    -9000003983.48384  +0.49451    -0.515075
+-0.003769    -2.67751  -9000003983.48384    -0.154523
+0.104397    +0.30566  -2.67751    -0.046357
+0.058040    -0.38724  +0.30566    -0.046357
+0.090490    +0.16145  -0.38724    -0.013907
+0.076583    -0.03371  +0.16145    -0.013907
+0.086318    +0.10857  -0.03371    -0.004172
+0.082146    +0.05086  +0.10857    -0.004172
+0.077974    -0.01182  +0.05086    -0.004172
+0.080894    +0.03266  -0.01182    -0.001252
+0.079642    +0.01397  +0.03266    -0.001252
+0.078391    -0.00517  +0.01397    -0.001252
+0.079267    +0.00831  -0.00517    -0.000375
+0.078891    +0.00254  +0.00831    -0.000375
+0.078516    -0.00323  +0.00254    -0.000375
+0.078779    +0.00083  -0.00323    -0.000113
+0.078666    -0.00090  +0.00083    -0.000113
+0.078745    +0.00032  -0.00090    -0.000034
+
+  RooFitResult: minimized FCN value: -0.00339766, estimated distance to minimum: 0.000123927
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 HESSE=0 
+
+    Constant Parameter    Value     
+  --------------------  ------------
+                  F_In    0.0000e+00
+                JER_In    0.0000e+00
+                JES_In    0.0000e+00
+                JMR_In    0.0000e+00
+                JMS_In    0.0000e+00
+             PS_FSR_In    0.0000e+00
+             PS_ISR_In    0.0000e+00
+                 RF_In    0.0000e+00
+                  R_In    0.0000e+00
+               btag_In    0.0000e+00
+               lumi_In    0.0000e+00
+  n_exp_binLoose_HIGH_proc_Background    1.0000e+00
+  n_exp_binLoose_LOW_proc_Background    1.0000e+00
+  n_exp_binLoose_SIG_proc_Background    1.0000e+00
+  n_exp_binPass_HIGH_proc_Background_1x1    1.0000e+00
+  n_exp_binPass_LOW_proc_Background_1x1    1.0000e+00
+  n_exp_binPass_SIG_proc_Background_1x1    1.0000e+00
+                pdf_In    0.0000e+00
+             pileup_In    0.0000e+00
+            prefire_In    0.0000e+00
+           top_ptrw_In    0.0000e+00
+         ttbar_xsec_In    0.0000e+00
+
+    Floating Parameter  InitialValue    FinalValue (+HiError,-LoError)    GblCorr.
+  --------------------  ------------  ----------------------------------  --------
+  Background_Loose_HIGH_bin_1-1    4.4143e+03    4.4145e+03         +/-  6.37e+01  <none>
+  Background_Loose_HIGH_bin_1-2    3.7053e+03    3.7054e+03         +/-  6.25e+01  <none>
+  Background_Loose_HIGH_bin_1-3    2.3731e+03    2.3734e+03         +/-  5.18e+01  <none>
+  Background_Loose_HIGH_bin_1-4    1.5663e+03    1.5661e+03         +/-  4.19e+01  <none>
+  Background_Loose_HIGH_bin_1-5    5.7593e+02    5.7590e+02         +/-  2.53e+01  <none>
+  Background_Loose_HIGH_bin_1-6    1.7744e+02    1.7746e+02         +/-  1.28e+01  <none>
+  Background_Loose_HIGH_bin_1-7    6.4002e+01    6.4000e+01         +/-  7.53e+00  <none>
+  Background_Loose_HIGH_bin_2-1    2.0014e+03    2.0014e+03         +/-  4.21e+01  <none>
+  Background_Loose_HIGH_bin_2-2    1.6217e+03    1.6217e+03         +/-  4.04e+01  <none>
+  Background_Loose_HIGH_bin_2-3    1.0271e+03    1.0271e+03         +/-  3.10e+01  <none>
+  Background_Loose_HIGH_bin_2-4    6.3427e+02    6.3429e+02         +/-  2.87e+01  <none>
+  Background_Loose_HIGH_bin_2-5    2.3022e+02    2.3003e+02         +/-  1.52e+01  <none>
+  Background_Loose_HIGH_bin_2-6    8.6582e+01    8.6581e+01         +/-  8.67e+00  <none>
+  Background_Loose_HIGH_bin_2-7    3.0237e+01    3.0237e+01         +/-  5.12e+00  <none>
+  Background_Loose_HIGH_bin_3-1    8.7435e+02    8.7436e+02         +/-  2.78e+01  <none>
+  Background_Loose_HIGH_bin_3-2    7.5717e+02    7.5717e+02         +/-  2.58e+01  <none>
+  Background_Loose_HIGH_bin_3-3    5.1177e+02    5.1177e+02         +/-  2.25e+01  <none>
+  Background_Loose_HIGH_bin_3-4    3.2908e+02    3.2899e+02         +/-  1.73e+01  <none>
+  Background_Loose_HIGH_bin_3-5    1.1922e+02    1.1921e+02         +/-  1.02e+01  <none>
+  Background_Loose_HIGH_bin_3-6    3.9121e+01    3.9121e+01         +/-  5.84e+00  <none>
+  Background_Loose_HIGH_bin_3-7    1.0511e+01    1.0568e+01         +/-  3.62e+00  <none>
+  Background_Loose_HIGH_bin_4-1    4.4909e+02    4.4916e+02         +/-  2.02e+01  <none>
+  Background_Loose_HIGH_bin_4-2    3.5339e+02    3.5339e+02         +/-  1.77e+01  <none>
+  Background_Loose_HIGH_bin_4-3    2.4175e+02    2.4181e+02         +/-  1.49e+01  <none>
+  Background_Loose_HIGH_bin_4-4    1.4699e+02    1.4700e+02         +/-  1.19e+01  <none>
+  Background_Loose_HIGH_bin_4-5    7.2291e+01    7.2287e+01         +/-  7.97e+00  <none>
+  Background_Loose_HIGH_bin_4-6    1.8093e+01    1.8091e+01         +/-  4.01e+00  <none>
+  Background_Loose_HIGH_bin_4-7    1.0023e+01    1.0021e+01         +/-  3.03e+00  <none>
+  Background_Loose_HIGH_bin_5-1    2.0148e+02    2.0149e+02         +/-  1.34e+01  <none>
+  Background_Loose_HIGH_bin_5-2    1.6979e+02    1.6979e+02         +/-  1.23e+01  <none>
+  Background_Loose_HIGH_bin_5-3    9.4710e+01    9.4708e+01         +/-  9.15e+00  <none>
+  Background_Loose_HIGH_bin_5-4    7.0411e+01    7.0404e+01         +/-  7.92e+00  <none>
+  Background_Loose_HIGH_bin_5-5    2.2764e+01    2.2767e+01         +/-  4.67e+00  <none>
+  Background_Loose_HIGH_bin_5-6    7.4371e+00    7.4393e+00         +/-  2.83e+00  <none>
+  Background_Loose_HIGH_bin_5-7    3.4430e+00    3.4428e+00         +/-  2.00e+00  <none>
+  Background_Loose_HIGH_bin_6-1    1.7676e+02    1.7676e+02         +/-  1.26e+01  <none>
+  Background_Loose_HIGH_bin_6-2    1.4013e+02    1.4013e+02         +/-  1.12e+01  <none>
+  Background_Loose_HIGH_bin_6-3    9.5807e+01    9.5809e+01         +/-  9.25e+00  <none>
+  Background_Loose_HIGH_bin_6-4    4.5079e+01    4.5080e+01         +/-  6.35e+00  <none>
+  Background_Loose_HIGH_bin_6-5    2.6411e+01    2.6410e+01         +/-  4.86e+00  <none>
+  Background_Loose_HIGH_bin_6-6    1.0256e+01    1.0267e+01         +/-  3.22e+00  <none>
+  Background_Loose_HIGH_bin_6-7    1.5123e+00    1.5127e+00         +/-  1.39e+00  <none>
+  Background_Loose_LOW_bin_1-1    6.5932e+03    6.5931e+03         +/-  7.82e+01  <none>
+  Background_Loose_LOW_bin_1-2    5.3625e+03    5.3626e+03         +/-  8.42e+01  <none>
+  Background_Loose_LOW_bin_1-3    3.4137e+03    3.4133e+03         +/-  7.32e+01  <none>
+  Background_Loose_LOW_bin_1-4    2.1003e+03    2.1002e+03         +/-  7.72e+01  <none>
+  Background_Loose_LOW_bin_1-5    8.1315e+02    8.1294e+02         +/-  3.05e+01  <none>
+  Background_Loose_LOW_bin_1-6    2.1234e+02    2.1238e+02         +/-  1.40e+01  <none>
+  Background_Loose_LOW_bin_1-7    7.6767e+01    7.6779e+01         +/-  8.74e+00  <none>
+  Background_Loose_SIG_bin_1-1    3.0878e+03    3.0878e+03         +/-  5.33e+01  <none>
+  Background_Loose_SIG_bin_1-2    2.5088e+03    2.5089e+03         +/-  5.20e+01  <none>
+  Background_Loose_SIG_bin_1-3    1.6326e+03    1.6329e+03         +/-  4.15e+01  <none>
+  Background_Loose_SIG_bin_1-4    9.9037e+02    9.9036e+02         +/-  3.76e+01  <none>
+  Background_Loose_SIG_bin_1-5    3.5183e+02    3.5177e+02         +/-  1.92e+01  <none>
+  Background_Loose_SIG_bin_1-6    1.0617e+02    1.0617e+02         +/-  9.55e+00  <none>
+  Background_Loose_SIG_bin_1-7    3.3340e+01    3.3341e+01         +/-  5.35e+00  <none>
+  Background_Loose_SIG_bin_2-1    2.5458e+03    2.5459e+03         +/-  4.86e+01  <none>
+  Background_Loose_SIG_bin_2-2    2.1445e+03    2.1447e+03         +/-  4.66e+01  <none>
+  Background_Loose_SIG_bin_2-3    1.3501e+03    1.3503e+03         +/-  3.90e+01  <none>
+  Background_Loose_SIG_bin_2-4    8.5860e+02    8.5869e+02         +/-  3.72e+01  <none>
+  Background_Loose_SIG_bin_2-5    3.1588e+02    3.1594e+02         +/-  1.77e+01  <none>
+  Background_Loose_SIG_bin_2-6    8.9983e+01    8.9982e+01         +/-  8.79e+00  <none>
+  Background_Loose_SIG_bin_2-7    2.2244e+01    2.2244e+01         +/-  4.37e+00  <none>
+  Background_Loose_SIG_bin_3-1    2.1115e+03    2.1117e+03         +/-  4.39e+01  <none>
+  Background_Loose_SIG_bin_3-2    1.7109e+03    1.7110e+03         +/-  3.99e+01  <none>
+  Background_Loose_SIG_bin_3-3    1.0938e+03    1.0940e+03         +/-  3.49e+01  <none>
+  Background_Loose_SIG_bin_3-4    7.4432e+02    7.4427e+02         +/-  3.05e+01  <none>
+  Background_Loose_SIG_bin_3-5    2.4776e+02    2.4772e+02         +/-  1.56e+01  <none>
+  Background_Loose_SIG_bin_3-6    6.0887e+01    6.0898e+01         +/-  7.23e+00  <none>
+  Background_Loose_SIG_bin_3-7    2.8262e+01    2.8261e+01         +/-  4.93e+00  <none>
+  Background_Loose_SIG_bin_4-1    1.7827e+03    1.7827e+03         +/-  3.99e+01  <none>
+  Background_Loose_SIG_bin_4-2    1.3823e+03    1.3823e+03         +/-  3.71e+01  <none>
+  Background_Loose_SIG_bin_4-3    8.8061e+02    8.8043e+02         +/-  2.87e+01  <none>
+  Background_Loose_SIG_bin_4-4    6.2915e+02    6.2913e+02         +/-  2.64e+01  <none>
+  Background_Loose_SIG_bin_4-5    2.3278e+02    2.3278e+02         +/-  1.42e+01  <none>
+  Background_Loose_SIG_bin_4-6    7.2121e+01    7.2120e+01         +/-  7.88e+00  <none>
+  Background_Loose_SIG_bin_4-7    1.7998e+01    1.7997e+01         +/-  3.93e+00  <none>
+  Background_Loose_SIG_bin_5-1    1.4034e+03    1.4035e+03         +/-  3.61e+01  <none>
+  Background_Loose_SIG_bin_5-2    1.2053e+03    1.2051e+03         +/-  3.42e+01  <none>
+  Background_Loose_SIG_bin_5-3    7.7987e+02    7.8004e+02         +/-  2.79e+01  <none>
+  Background_Loose_SIG_bin_5-4    4.8877e+02    4.8887e+02         +/-  2.31e+01  <none>
+  Background_Loose_SIG_bin_5-5    1.9420e+02    1.9417e+02         +/-  1.38e+01  <none>
+  Background_Loose_SIG_bin_5-6    5.6719e+01    5.6718e+01         +/-  6.99e+00  <none>
+  Background_Loose_SIG_bin_5-7    2.1796e+01    2.1789e+01         +/-  4.54e+00  <none>
+  Background_rpf_1x1_par0    4.2626e-01    4.2626e-01         +/-  4.73e-01  <none>
+  Background_rpf_1x1_par1   -1.3393e-01   -1.3392e-01         +/-  1.51e-01  <none>
+  Background_rpf_1x1_par2    4.0151e-01    4.0150e-01         +/-  4.46e-01  <none>
+  Background_rpf_1x1_par3    1.1946e-02    1.2055e-02         +/-  3.34e-02  <none>
+                     F    1.0307e-02    1.5774e-02         +/-  4.88e-01  <none>
+                   JER    3.6535e-02    3.1705e-02         +/-  3.74e-01  <none>
+                   JES    8.5407e-02    7.7142e-02         +/-  4.49e-01  <none>
+                   JMR    1.1323e+00    1.1438e+00         +/-  5.77e-01  <none>
+                   JMS   -1.1581e-01   -1.0446e-01         +/-  3.63e-01  <none>
+                PS_FSR   -2.0423e-01   -2.1426e-01         +/-  2.27e-01  <none>
+                PS_ISR    6.4791e-02    6.5704e-02         +/-  5.02e-01  <none>
+                     R    2.0164e-01    2.0003e-01         +/-  4.80e-01  <none>
+                    RF    2.3760e-01    2.4307e-01         +/-  4.66e-01  <none>
+                  btag    3.1681e-02    2.7867e-02         +/-  5.14e-01  <none>
+                  lumi   -1.3716e-01   -1.3839e-01         +/-  9.98e-01  <none>
+                   pdf   -1.1187e-01   -1.0687e-01         +/-  5.15e-01  <none>
+                pileup   -3.6518e-01   -3.5674e-01         +/-  4.75e-01  <none>
+               prefire   -2.1183e-02   -2.1931e-02         +/-  5.17e-01  <none>
+                     r    1.5102e-01    1.5075e-01 (+8.87e-02,-7.18e-02)  <none>
+              top_ptrw    0.0000e+00    0.0000e+00         +/-  5.16e-01  <none>
+            ttbar_xsec   -1.3419e+00   -1.3387e+00         +/-  8.05e-01  <none>
+
+
+ --- FitDiagnostics ---
+Best fit r: 0.150754  -0.0717744/+0.0886871  (68% CL)
+Done in 0.04 min (cpu), 0.05 min (real)
+Printing Message Summary From ... combine_logger.out
+----------------------------------------------
+Messages of type INFO : 209
+Messages of type DEBUG : 2
+Messages of type ERROR : 1
+----------------------------------------------
+INFO: (function: applyOptionsBase) FitterAlgoBase.cc: 113 -- Setting robust fit options to Tolerance=0.1 / Strategy=0 / Type,Algo=Minuit2,Migrad (note that defaults of CascadeMinimizer were taken where option not specified)
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+ERROR: (function: runSpecific) [WARNING]: Unable to determine uncertainties on all fit parameters in b-only fit. Have a look at https://cms-analysis.github.io/HiggsAnalysis-CombinedLimit/part3/nonstandard/#fit-parameter-uncertainties for more information.
+DEBUG: (function: runSpecific) FitDiagnostics.cc: 318 -- Fit B-only, status = 0, numBadNLL = 0, covariance quality = 2
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: doFit) FitterAlgoBase.cc: 359 -- Running RobustFit for POI r. Configured with strategy 0  
+INFO: (function: findCrossing) FitterAlgoBase.cc: 405 -- Searching for crossing at nll = -13725, in the interval 0.150754 < r < 20
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 426 -- r lvl-here lvl-there 	stepping 
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_6-7 at boundary (within ~1sigma): 0.753125+/-1.36803
+INFO: (function: minimize) CascadeMinimizer.cc: 480 -- After fit, some parameters are found at the boundary (within ~1sigma)
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 2.135678    -11.51604  +0.49451    1.984925
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_6-7 at boundary (within ~1sigma): 1.17294+/-1.37112
+INFO: (function: minimize) CascadeMinimizer.cc: 480 -- After fit, some parameters are found at the boundary (within ~1sigma)
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 0.746231    -4.38131  -11.51604    0.595477
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_6-7 at boundary (within ~1sigma): 1.06355+/-1.26895
+INFO: (function: minimize) CascadeMinimizer.cc: 480 -- After fit, some parameters are found at the boundary (within ~1sigma)
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 0.329397    -1.20413  -4.38131    0.178643
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 0.204347    +0.29966  -1.20413    0.053593
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_6-7 at boundary (within ~1sigma): 1.22446+/-1.31598
+INFO: (function: minimize) CascadeMinimizer.cc: 480 -- After fit, some parameters are found at the boundary (within ~1sigma)
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 0.257940    -0.20245  +0.29966    0.053593
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_6-7 at boundary (within ~1sigma): 1.32028+/-1.32858
+INFO: (function: minimize) CascadeMinimizer.cc: 480 -- After fit, some parameters are found at the boundary (within ~1sigma)
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 0.220425    +0.17671  -0.20245    0.016078
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_6-7 at boundary (within ~1sigma): 1.27755+/-1.33125
+INFO: (function: minimize) CascadeMinimizer.cc: 480 -- After fit, some parameters are found at the boundary (within ~1sigma)
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 0.236502    +0.02903  +0.17671    0.016078
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_6-7 at boundary (within ~1sigma): 1.23807+/-1.32544
+INFO: (function: minimize) CascadeMinimizer.cc: 480 -- After fit, some parameters are found at the boundary (within ~1sigma)
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 0.252580    -0.14104  +0.02903    0.016078
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_6-7 at boundary (within ~1sigma): 1.26488+/-1.33032
+INFO: (function: minimize) CascadeMinimizer.cc: 480 -- After fit, some parameters are found at the boundary (within ~1sigma)
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 0.241326    -0.01976  -0.14104    0.004823
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_6-7 at boundary (within ~1sigma): 1.27279+/-1.32819
+INFO: (function: minimize) CascadeMinimizer.cc: 480 -- After fit, some parameters are found at the boundary (within ~1sigma)
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 0.237949    +0.01463  -0.01976    0.001447
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_6-7 at boundary (within ~1sigma): 1.26931+/-1.34258
+INFO: (function: minimize) CascadeMinimizer.cc: 480 -- After fit, some parameters are found at the boundary (within ~1sigma)
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 0.239396    +0.00004  +0.01463    0.001447
+INFO: (function: findCrossing) FitterAlgoBase.cc: 405 -- Searching for crossing at nll = -13725, in the interval 0.150754 < r < -5
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 426 -- r lvl-here lvl-there 	stepping 
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_1-1 at boundary (within ~1sigma): 4414.44+/-227820
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_1-2 at boundary (within ~1sigma): 3705.44+/-228145
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_1-3 at boundary (within ~1sigma): 2373.42+/-228758
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_1-4 at boundary (within ~1sigma): 1566.15+/-229129
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_1-5 at boundary (within ~1sigma): 575.93+/-229584
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_1-6 at boundary (within ~1sigma): 177.464+/-229767
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_1-7 at boundary (within ~1sigma): 64.0003+/-229819
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_2-1 at boundary (within ~1sigma): 2001.37+/-228929
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_2-2 at boundary (within ~1sigma): 1621.71+/-229103
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_2-3 at boundary (within ~1sigma): 1027.08+/-229377
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_2-4 at boundary (within ~1sigma): 634.315+/-229557
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_2-5 at boundary (within ~1sigma): 230.046+/-229743
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_2-6 at boundary (within ~1sigma): 86.5799+/-229809
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_2-7 at boundary (within ~1sigma): 30.2363+/-229835
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_3-1 at boundary (within ~1sigma): 874.349+/-229447
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_3-2 at boundary (within ~1sigma): 757.165+/-229501
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_3-3 at boundary (within ~1sigma): 511.763+/-229614
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_3-4 at boundary (within ~1sigma): 328.997+/-229698
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_3-5 at boundary (within ~1sigma): 119.213+/-229794
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_3-6 at boundary (within ~1sigma): 39.1205+/-229831
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_3-7 at boundary (within ~1sigma): 10.5636+/-229844
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_4-1 at boundary (within ~1sigma): 449.15+/-229642
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_4-2 at boundary (within ~1sigma): 353.388+/-229686
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_4-3 at boundary (within ~1sigma): 241.801+/-229738
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_4-4 at boundary (within ~1sigma): 147.004+/-229781
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_4-5 at boundary (within ~1sigma): 72.2852+/-229816
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_4-6 at boundary (within ~1sigma): 18.0903+/-229841
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_4-7 at boundary (within ~1sigma): 10.0201+/-229844
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_5-1 at boundary (within ~1sigma): 201.483+/-229756
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_5-2 at boundary (within ~1sigma): 169.783+/-229771
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_5-3 at boundary (within ~1sigma): 94.7056+/-229805
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_5-4 at boundary (within ~1sigma): 70.3991+/-229816
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_5-5 at boundary (within ~1sigma): 22.7645+/-229838
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_5-6 at boundary (within ~1sigma): 7.43778+/-229845
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_5-7 at boundary (within ~1sigma): 3.44138+/-229847
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_6-1 at boundary (within ~1sigma): 176.76+/-229768
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_6-2 at boundary (within ~1sigma): 140.129+/-229784
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_6-3 at boundary (within ~1sigma): 95.8071+/-229805
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_6-4 at boundary (within ~1sigma): 45.0785+/-229828
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_6-5 at boundary (within ~1sigma): 26.4086+/-229837
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_6-6 at boundary (within ~1sigma): 10.2659+/-229844
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter Background_Loose_HIGH_bin_6-7 at boundary (within ~1sigma): 1.51155+/-229848
+INFO: (function: minimize) CascadeMinimizer.cc: 480 -- After fit, some parameters are found at the boundary (within ~1sigma)
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- -0.364322    -9000003983.48384  +0.49451    -0.515075
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- -0.003769    -2.67751  -9000003983.48384    -0.154523
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 0.104397    +0.30566  -2.67751    -0.046357
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 0.058040    -0.38724  +0.30566    -0.046357
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 0.090490    +0.16145  -0.38724    -0.013907
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 0.076583    -0.03371  +0.16145    -0.013907
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 0.086318    +0.10857  -0.03371    -0.004172
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 0.082146    +0.05086  +0.10857    -0.004172
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 0.077974    -0.01182  +0.05086    -0.004172
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 0.080894    +0.03266  -0.01182    -0.001252
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 0.079642    +0.01397  +0.03266    -0.001252
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 0.078391    -0.00517  +0.01397    -0.001252
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 0.079267    +0.00831  -0.00517    -0.000375
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 0.078891    +0.00254  +0.00831    -0.000375
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 0.078516    -0.00323  +0.00254    -0.000375
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 0.078779    +0.00083  -0.00323    -0.000113
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 0.078666    -0.00090  +0.00083    -0.000113
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 459 -- 0.078745    +0.00032  -0.00090    -0.000034
+DEBUG: (function: runSpecific) FitDiagnostics.cc: 443 -- Fit S+B, status = 0, numBadNLL = 0, covariance quality = 3

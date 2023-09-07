@@ -1,0 +1,97 @@
+{
+    "NAME": "HWW",
+    "PROCESSES": {
+      "data_obs": {
+        "SYSTEMATICS":[],
+        "SCALE": 1.0,
+        "COLOR": 1,
+        "ALIASOLD": "data",
+        "ALIAS": "TightCRJetHT2016",
+        "TYPE": "DATA",
+        "TITLE": "Data",
+        "LOC": "path/FILE:HIST"
+      },
+      "SIGNAME": {
+        "SYSTEMATICS":["lumi"],
+        "SCALE": 1.0,
+        "COLOR": 1,
+        "TYPE": "SIGNAL",
+        "TITLE": "m_{X} = 3000, m_{Y} = 300 (GeV)",
+        "LOC":"path/FILE:HIST"
+      },
+
+
+      "TightCRTTToHadronic_rescaled": {        
+        "SYSTEMATICS":["lumi","ttbar_xsec"],
+        "SCALE": 1.0,
+        "COLOR": 2,
+        "TYPE": "BKG",
+        "TITLE": "t#bar{t}",
+        "LOC":"path/FILE:HIST"
+      }
+      
+    },
+
+      
+    
+  
+    "REGIONS": {
+      "Fail": {
+        "PROCESSES": ["SIGNAME", "TightCRTTToHadronic_rescaled"],
+        "BINNING": "default"
+      },
+      "Loose": {
+        "PROCESSES": ["SIGNAME", "TightCRTTToHadronic_rescaled"],
+        "BINNING": "default"
+      },
+      "Pass": {
+        "PROCESSES": ["SIGNAME", "TightCRTTToHadronic_rescaled"],
+        "BINNING": "default"
+      }
+    },
+  
+    "GLOBAL": {
+        "FILE": "2dhist_$process.root",
+        "HIST": "$region",
+        "path": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_10_6_14/src",
+        "SIGNAME": ["TightCRMX3000_MY300_rescaled"]
+      },
+      "BINNING": {
+        "default": {
+          "X": {
+            "NAME": "hww",
+            "TITLE": "m_{X} (GeV)",
+            "BINS": [1000,1300,1600, 1900,2200,2500,2800,3100,3400,4000],
+            "BINSNEW":[1300, 1360, 1420, 1480, 1540, 1600, 1660],
+            "BINSNU":[1000,1600, 2200, 2800,3100,4000],
+            "SIGSTARTOLD": 1420,
+            "SIGENDOLD":1540, 
+            "SIGSTART": 1300,
+            "SIGEND": 1600,
+            "SLICES":[1000, 1600,2500,4000]
+          },
+          "Y": {
+            "NAME": "ww",
+            "TITLE": "m_{Y} (GeV)",
+            "BINS": [0, 40,100, 150,200, 250,300,350,500],
+            "SLICES":[0,40,100,500]
+          }
+        }
+      },
+      "SYSTEMATICS": {
+        "lumi": {
+          "CODE": 0,
+          "VAL": 1.016
+        },
+        "ttbar_xsec": {
+          "VAL": 1.2
+        }
+        
+      },
+      "OPTIONS": {
+        "plotPrefitSigInFitB": true,
+        "plotUncerts": false,
+        "plotTitles": false,
+        "year": 1
+      }
+    }

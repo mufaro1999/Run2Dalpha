@@ -1,0 +1,287 @@
+{
+  "BINNING": {
+    "default": {
+      "X": {
+        "BINS": [
+          1000, 
+          1300, 
+          1360, 
+          1420, 
+          1480, 
+          1540, 
+          1600, 
+          1900, 
+          2200, 
+          2500, 
+          2800, 
+          3100, 
+          4000
+        ], 
+        "BINSNEW": [
+          1300, 
+          1360, 
+          1420, 
+          1480, 
+          1540, 
+          1600, 
+          1660
+        ], 
+        "BINSNU": [
+          1000, 
+          1600, 
+          2200, 
+          2800, 
+          3100, 
+          4000
+        ], 
+        "NAME": "hww", 
+        "SIGEND": 1600, 
+        "SIGENDOLD": 1540, 
+        "SIGSTART": 1300, 
+        "SIGSTARTOLD": 1420, 
+        "SLICES": [
+          1000, 
+          1600, 
+          2500, 
+          4000
+        ], 
+        "TITLE": "m_{X} (GeV)"
+      }, 
+      "Y": {
+        "BINS": [
+          0, 
+          40, 
+          100, 
+          150, 
+          200, 
+          250, 
+          300, 
+          500
+        ], 
+        "NAME": "ww", 
+        "SLICES": [
+          0, 
+          40, 
+          100, 
+          500
+        ], 
+        "TITLE": "m_{Y} (GeV)"
+      }
+    }
+  }, 
+  "GLOBAL": {
+    "DATAHIST": "$region", 
+    "FILE": "$process_CR.root", 
+    "FILE_DOWN": "$process_CR.root", 
+    "FILE_UP": "$process_CR.root", 
+    "HIST": "mjjvsmY_CR_$region_nom_weight", 
+    "HIST_DOWN": "mjjvsmY_CR_$region_$syst_down", 
+    "HIST_UP": "mjjvsmY_CR_$region_$syst_up", 
+    "SIGNAME": [
+      "MX2400_MY100", 
+      "MX2400_MY250", 
+      "MX2400_MY350", 
+      "MX1600_MY150", 
+      "MX2000_MY250", 
+      "MX3000_MY190", 
+      "MX3000_MY300", 
+      "MX3000_MY400", 
+      "MX2800_MY100", 
+      "MX2800_MY190", 
+      "MX2600_MY300"
+    ], 
+    "path": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed"
+  }, 
+  "NAME": "XtoHY", 
+  "OPTIONS": {
+    "blindedFit": [], 
+    "blindedPlots": [], 
+    "comment": "removed 'SR_pass' and 'SR_loose' from the blindedPlots and blindedFit options. Especially with the move to T'->tphi, we are just looking at the CR at first, so unblinding there might slightly aid the fit. ALSO: TURN OFF plotTemplateComparisons", 
+    "haddSignals": true, 
+    "plotPrefitSigInFitB": true, 
+    "plotTemplateComparisons": false, 
+    "plotTitles": false, 
+    "plotUncerts": false, 
+    "year": 2
+  }, 
+  "PROCESSES": {
+    "SIGNAME": {
+      "COLOR": 1, 
+      "LOC": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_nom_weight", 
+      "NAME": "SIGNAME", 
+      "SCALE": 1.0, 
+      "SYSTEMATICS": [
+        "lumi", 
+        "RF", 
+        "R", 
+        "btag", 
+        "pdf", 
+        "pileup", 
+        "prefire", 
+        "F", 
+        "PS_FSR", 
+        "PS_ISR", 
+        "JES", 
+        "JER", 
+        "JMS", 
+        "JMR"
+      ], 
+      "TITLE": "XtoHY", 
+      "TYPE": "SIGNAL", 
+      "VARIATION": "nominal"
+    }, 
+    "TTToHadronic": {
+      "COLOR": 2, 
+      "LOC": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_nom_weight", 
+      "NAME": "TTToHadronic", 
+      "SCALE": 1.0, 
+      "SYSTEMATICS": [
+        "lumi", 
+        "ttbar_xsec", 
+        "RF", 
+        "R", 
+        "btag", 
+        "pdf", 
+        "pileup", 
+        "prefire", 
+        "F", 
+        "PS_FSR", 
+        "PS_ISR", 
+        "top_ptrw", 
+        "JES", 
+        "JER", 
+        "JMS", 
+        "JMR"
+      ], 
+      "TITLE": "t#bar{t}", 
+      "TYPE": "BKG", 
+      "VARIATION": "nominal"
+    }, 
+    "data_obs": {
+      "ALIAS": "JetHT_merged", 
+      "COLOR": 1, 
+      "LOC": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:$region", 
+      "NAME": "data_obs", 
+      "SCALE": 1.0, 
+      "SYSTEMATICS": [], 
+      "TITLE": "Data", 
+      "TYPE": "DATA", 
+      "VARIATION": "nominal"
+    }
+  }, 
+  "REGIONS": {
+    "Loose": {
+      "BINNING": "default", 
+      "PROCESSES": [
+        "SIGNAME", 
+        "TTToHadronic"
+      ]
+    }, 
+    "Pass": {
+      "BINNING": "default", 
+      "PROCESSES": [
+        "SIGNAME", 
+        "TTToHadronic"
+      ]
+    }
+  }, 
+  "SYSTEMATICS": {
+    "F": {
+      "ALIAS": "F", 
+      "DOWN": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_down", 
+      "SIGMA": 1.0, 
+      "UP": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_up"
+    }, 
+    "JER": {
+      "ALIAS": "JER", 
+      "DOWN": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_down", 
+      "SIGMA": 1.0, 
+      "UP": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_up"
+    }, 
+    "JES": {
+      "ALIAS": "JES", 
+      "DOWN": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_down", 
+      "SIGMA": 1.0, 
+      "UP": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_up"
+    }, 
+    "JMR": {
+      "ALIAS": "JMR", 
+      "DOWN": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_down", 
+      "SIGMA": 1.0, 
+      "UP": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_up"
+    }, 
+    "JMS": {
+      "ALIAS": "JMS", 
+      "DOWN": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_down", 
+      "SIGMA": 1.0, 
+      "UP": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_up"
+    }, 
+    "PS_FSR": {
+      "ALIAS": "PS_FSR", 
+      "DOWN": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_down", 
+      "SIGMA": 1.0, 
+      "UP": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_up"
+    }, 
+    "PS_ISR": {
+      "ALIAS": "PS_ISR", 
+      "DOWN": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_down", 
+      "SIGMA": 1.0, 
+      "UP": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_up"
+    }, 
+    "R": {
+      "ALIAS": "R", 
+      "DOWN": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_down", 
+      "SIGMA": 1.0, 
+      "UP": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_up"
+    }, 
+    "RF": {
+      "ALIAS": "RF", 
+      "DOWN": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_down", 
+      "SIGMA": 1.0, 
+      "UP": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_up"
+    }, 
+    "btag": {
+      "ALIAS": "btag", 
+      "DOWN": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_down", 
+      "SIGMA": 1.0, 
+      "UP": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_up"
+    }, 
+    "lumi": {
+      "CODE": 0, 
+      "VAL": 1.019
+    }, 
+    "pdf": {
+      "ALIAS": "pdf", 
+      "DOWN": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_down", 
+      "SIGMA": 1.0, 
+      "UP": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_up"
+    }, 
+    "pileup": {
+      "ALIAS": "pileup", 
+      "DOWN": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_down", 
+      "SIGMA": 1.0, 
+      "UP": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_up"
+    }, 
+    "prefire": {
+      "ALIAS": "prefire", 
+      "DOWN": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_down", 
+      "SIGMA": 1.0, 
+      "UP": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_up"
+    }, 
+    "top_ptrw": {
+      "ALIAS": "top_ptrw", 
+      "DOWN": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_down", 
+      "SIGMA": 1.0, 
+      "UP": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_11_1_4/src/TagNTrain/plotting/analysis_note_datasets/2dhistos_scaled_renamed/$process_CR.root:mjjvsmY_CR_$region_$syst_up"
+    }, 
+    "ttbar_xsec": {
+      "VAL": 1.2
+    }, 
+    "w_xsec": {
+      "VAL": 1.2
+    }, 
+    "z_xsec": {
+      "VAL": 1.2
+    }
+  }
+}

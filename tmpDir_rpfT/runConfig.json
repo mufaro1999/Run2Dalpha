@@ -1,0 +1,162 @@
+{
+  "BINNING": {
+    "default": {
+      "X": {
+        "BINS": [
+          1000, 
+          1300, 
+          1600, 
+          1900, 
+          2200, 
+          2500, 
+          2800, 
+          3100, 
+          3400, 
+          4000
+        ], 
+        "BINSNEW": [
+          1300, 
+          1360, 
+          1420, 
+          1480, 
+          1540, 
+          1600, 
+          1660
+        ], 
+        "BINSNU": [
+          1000, 
+          1600, 
+          2200, 
+          2800, 
+          3100, 
+          4000
+        ], 
+        "MAX": 500, 
+        "MIN": 0, 
+        "NAME": "hww", 
+        "NBINS": 50, 
+        "SIGEND": 1600, 
+        "SIGENDOLD": 1540, 
+        "SIGSTART": 1300, 
+        "SIGSTARTOLD": 1420, 
+        "SLICES": [
+          1000, 
+          1600, 
+          2500, 
+          4000
+        ], 
+        "TITLE": "m_{X} (GeV)"
+      }, 
+      "Y": {
+        "BINS": [
+          0, 
+          40, 
+          100, 
+          150, 
+          200, 
+          250, 
+          300, 
+          350, 
+          500
+        ], 
+        "MAX": 4000, 
+        "MIN": 1000, 
+        "NAME": "ww", 
+        "NBINS": 50, 
+        "SLICES": [
+          0, 
+          40, 
+          100, 
+          500
+        ], 
+        "TITLE": "m_{Y} (GeV)"
+      }
+    }
+  }, 
+  "GLOBAL": {
+    "FILE": "2dhist_$process.root", 
+    "HIST": "$region", 
+    "SIGNAME": [
+      "TightCRMX3000_MY300_rescaled"
+    ], 
+    "path": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_10_6_14/src"
+  }, 
+  "NAME": "HWW", 
+  "OPTIONS": {
+    "plotPrefitSigInFitB": true, 
+    "plotTitles": false, 
+    "plotUncerts": false, 
+    "year": 1
+  }, 
+  "PROCESSES": {
+    "SIGNAME": {
+      "COLOR": 1, 
+      "LOC": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_10_6_14/src/2dhist_$process.root:$region", 
+      "NAME": "SIGNAME", 
+      "SCALE": 1.0, 
+      "SYSTEMATICS": [
+        "lumi"
+      ], 
+      "TITLE": "m_{X} = 3000, m_{Y} = 300 (GeV)", 
+      "TYPE": "SIGNAL", 
+      "VARIATION": "nominal"
+    }, 
+    "TightCRTTToHadronic_rescaled": {
+      "COLOR": 2, 
+      "LOC": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_10_6_14/src/2dhist_$process.root:$region", 
+      "NAME": "TightCRTTToHadronic_rescaled", 
+      "SCALE": 1.0, 
+      "SYSTEMATICS": [
+        "lumi", 
+        "ttbar_xsec"
+      ], 
+      "TITLE": "t#bar{t}", 
+      "TYPE": "BKG", 
+      "VARIATION": "nominal"
+    }, 
+    "data_obs": {
+      "ALIAS": "TightCRJetHT2016", 
+      "ALIASOLD": "data", 
+      "COLOR": 1, 
+      "LOC": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_10_6_14/src/2dhist_$process.root:$region", 
+      "NAME": "data_obs", 
+      "SCALE": 1.0, 
+      "SYSTEMATICS": [], 
+      "TITLE": "Data", 
+      "TYPE": "DATA", 
+      "VARIATION": "nominal"
+    }
+  }, 
+  "REGIONS": {
+    "Fail": {
+      "BINNING": "default", 
+      "PROCESSES": [
+        "SIGNAME", 
+        "TightCRTTToHadronic_rescaled"
+      ]
+    }, 
+    "Loose": {
+      "BINNING": "default", 
+      "PROCESSES": [
+        "SIGNAME", 
+        "TightCRTTToHadronic_rescaled"
+      ]
+    }, 
+    "Pass": {
+      "BINNING": "default", 
+      "PROCESSES": [
+        "SIGNAME", 
+        "TightCRTTToHadronic_rescaled"
+      ]
+    }
+  }, 
+  "SYSTEMATICS": {
+    "lumi": {
+      "CODE": 0, 
+      "VAL": 1.016
+    }, 
+    "ttbar_xsec": {
+      "VAL": 1.2
+    }
+  }
+}

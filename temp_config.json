@@ -1,0 +1,156 @@
+{
+    "PROCESSES": {
+        "SIGNAME": {
+            "LOC": "path/FILE:HIST", 
+            "SCALE": 1.0, 
+            "TITLE": "m_{X} = 3000, m_{Y} = 300 (GeV)", 
+            "COLOR": 1, 
+            "SYSTEMATICS": [
+                "lumi"
+            ], 
+            "TYPE": "SIGNAL"
+        }, 
+        "TightCRTTToHadronic_rescaled": {
+            "LOC": "path/FILE:HIST", 
+            "SCALE": 1.0, 
+            "TITLE": "t#bar{t}", 
+            "COLOR": 2, 
+            "SYSTEMATICS": [
+                "lumi", 
+                "ttbar_xsec"
+            ], 
+            "TYPE": "BKG"
+        }, 
+        "data_obs": {
+            "LOC": "path/FILE:HIST", 
+            "SCALE": 1.0, 
+            "TITLE": "Data", 
+            "COLOR": 1, 
+            "SYSTEMATICS": [], 
+            "ALIAS": "TightCRJetHT2016", 
+            "ALIASOLD": "data", 
+            "TYPE": "DATA"
+        }
+    }, 
+    "NAME": "HWW", 
+    "GLOBAL": {
+        "HIST": "$region", 
+        "path": "/uscms/home/mchitoto/nobackup/XtoHY/CMSSW_10_6_14/src", 
+        "SIGNAME": [
+            "TightCRMX3000_MY300_rescaled"
+        ], 
+        "FILE": "2dhist_$process.root"
+    }, 
+    "SYSTEMATICS": {
+        "ttbar_xsec": {
+            "VAL": 1.2
+        }, 
+        "lumi": {
+            "CODE": 0, 
+            "VAL": 1.016
+        }
+    }, 
+    "BINNING": {
+        "default": {
+            "Y": {
+                "NBINS": 50, 
+                "NAME": "ww", 
+                "SLICES": [
+                    0, 
+                    40, 
+                    100, 
+                    500
+                ], 
+                "MIN": 1000, 
+                "MAX": 4000, 
+                "TITLE": "m_{Y} (GeV)", 
+                "BINS": [
+                    0, 
+                    40, 
+                    100, 
+                    150, 
+                    200, 
+                    250, 
+                    300, 
+                    350, 
+                    500
+                ]
+            }, 
+            "X": {
+                "NBINS": 50, 
+                "SIGENDOLD": 1540, 
+                "NAME": "hww", 
+                "TITLE": "m_{X} (GeV)", 
+                "SIGEND": 1600, 
+                "MAX": 500, 
+                "SIGSTARTOLD": 1420, 
+                "SIGSTART": 1300, 
+                "BINSNU": [
+                    1000, 
+                    1600, 
+                    2200, 
+                    2800, 
+                    3100, 
+                    4000
+                ], 
+                "MIN": 0, 
+                "SLICES": [
+                    1000, 
+                    1600, 
+                    2500, 
+                    4000
+                ], 
+                "BINS": [
+                    1000, 
+                    1300, 
+                    1600, 
+                    1900, 
+                    2200, 
+                    2500, 
+                    2800, 
+                    3100, 
+                    3400, 
+                    4000
+                ], 
+                "BINSNEW": [
+                    1300, 
+                    1360, 
+                    1420, 
+                    1480, 
+                    1540, 
+                    1600, 
+                    1660
+                ]
+            }
+        }
+    }, 
+    "REGIONS": {
+        "Fail": {
+            "PROCESSES": [
+                "SIGNAME", 
+                "TightCRTTToHadronic_rescaled"
+            ], 
+            "BINNING": "default"
+        }, 
+        "Loose": {
+            "PROCESSES": [
+                "SIGNAME", 
+                "TightCRTTToHadronic_rescaled"
+            ], 
+            "BINNING": "default"
+        }, 
+        "Pass": {
+            "PROCESSES": [
+                "SIGNAME", 
+                "TightCRTTToHadronic_rescaled"
+            ], 
+            "BINNING": "default"
+        }
+    }, 
+    "OPTIONS": {
+        "plotUncerts": false, 
+        "year": 1, 
+        "plotTitles": false, 
+        "plotPrefitSigInFitB": true
+    }
+}
